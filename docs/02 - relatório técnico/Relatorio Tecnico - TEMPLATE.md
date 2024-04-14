@@ -70,12 +70,12 @@ De acordo com as entrevistas feitas em campo identificamos problemas importantes
 O principal objetivo da plataforma "Blood-On" é aumentar a oferta de sangue em hospitais e clínicas através da conscientização das pessoas e esclarecimentos acerca do tema. Esta ferramenta foi desenvolvida com a finalidade de estabelecer uma conexão eficiente, prática e segura entre doadores e instituições de coleta de sangue, visando maximizar o número de doações e assegurar que estes centros de coleta disponham de estoques adequados para atender às demandas dos pacientes.
 
 Para alcançar o objetivo acima os doadores poderão contar com diversos recursos, dentre eles:
- -Cadastro único e com respeito à proteção dos dados conforme exige a LGPD.
- -Perfil que deverá ser preenchido uma única vez, mas que poderá ser atualizado afim de agilizar a próxima doação.
- -Tela com revisão dos requisitos para doação somente quando necessário e de forma bastante prática.
- -Acesso aos Centros de captação de sangue mais próximos, bem como o horário de funcionamento e dados do contato do estabelecimento.
- -Histórico de doações.
- -Outros.
+ - Cadastro único e com respeito à proteção dos dados conforme exige a LGPD.
+ - Perfil que deverá ser preenchido uma única vez, mas que poderá ser atualizado afim de agilizar a próxima doação.
+ - Tela com revisão dos requisitos para doação somente quando necessário e de forma bastante prática.
+ - Acesso aos Centros de captação de sangue mais próximos, bem como o horário de funcionamento e dados do contato do estabelecimento.
+ - Histórico de doações.
+ - Outros.
 
 ## Justificativa
 
@@ -85,11 +85,11 @@ A doação de sangue é uma demonstração essencial de solidariedade que pode l
 ## Público-Alvo
 
 Nosso público-alvo inclui:
- -Potenciais doadores - Pessoas saudáveis com idade entre 18 e 65 anos.
- -Hospitais e clínicas - Estabelecimentos de saúde que dependem do suprimento de sangue para realizar transfusões e procedimentos médicos.
- -Profissionais da saúde - Médicos, enfermeiros e outros profissionais da saúde que estejam envolvidos no processo de transfusão de sangue e que possam trabalhar na conscientização dos pacientes e de seus familiares afim de conseguir mais doações.
- -Centros de coleta - Instituições responsáveis pela coleta, armazenamento e distribuição de sangue.
- -População em geral -  Indivíduos que podem não ser doadores regulares, mas que podem ser sensibilizados e educados sobre a importância da doação de sangue e encorajados a participar.
+ - Potenciais doadores: Pessoas saudáveis com idade entre 18 e 65 anos.
+ - Hospitais e clínicas: Estabelecimentos de saúde que dependem do suprimento de sangue para realizar transfusões e procedimentos médicos.
+ - Profissionais da saúde: Médicos, enfermeiros e outros profissionais da saúde que estejam envolvidos no processo de transfusão de sangue e que possam trabalhar na conscientização dos pacientes e de seus familiares afim de conseguir mais doações.
+ - Centros de coleta: Instituições responsáveis pela coleta, armazenamento e distribuição de sangue.
+ - População em geral: Indivíduos que podem não ser doadores regulares, mas que podem ser sensibilizados e educados sobre a importância da doação de sangue e encorajados a participar.
  
  
 # Especificações do Projeto
