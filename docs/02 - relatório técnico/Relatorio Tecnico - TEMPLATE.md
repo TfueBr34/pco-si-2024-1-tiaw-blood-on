@@ -54,74 +54,43 @@
 
 
 # Introdução
+A doação de sangue é um ato de extrema importância para a saúde pública, sendo fundamental para salvar vidas em situações de emergência, no tratamento de doenças crônicas e na realização de procedimentos médicos complexos. No entanto, apesar de sua relevância, a escassez de sangue nas agências transfusionais é uma realidade enfrentada por muitas pessoas no mundo todo. Esta escassez é agravada por fatores tais como desinformação, burocracias e dificuldade na logística. É neste contexto que surge a Blood-On, plataforma que pretende jogar luz neste assunto e encurtar as distâncias entre o potencial doador e o paciente que tanto precisa do sangue.
 
 ## Problema
 
-......  COLOQUE AQUI O SEU TEXTO ......
+De acordo com as entrevistas feitas em campo identificamos problemas importantes como:
+ - Falta de conhecimento sobre os requisitos necessários para ser considerado um doador apto - Muitas pessoas não sabem se estão aptas para doar sangue porque não conhecem os critérios necessários, como idade, peso e histórico médico.
+ - Dificuldade em encontrar locais próximos para doação de sangue - É difícil para algumas pessoas encontrar centros de doação de sangue perto delas, especialmente em áreas mais remotas.
+ - Desinformação sobre os horários de funcionamento dos centros de doação - As pessoas muitas vezes não sabem quando os centros de doação de sangue estão abertos, o que pode resultar em visitas desperdiçadas.
+ - Desconhecimento dos benefícios da doação - Muitas pessoas não sabem que doar sangue não só ajuda os pacientes, mas também pode ser benéfico para elas mesmas, como receber uma verificação de saúde gratuita, tirar folga no serviço, etc.
 
-> Nesse momento você deve apresentar o problema que a sua aplicação deve
-> resolver. No entanto, não é a hora de comentar sobre a aplicação.
-> Descreva também o contexto em que essa aplicação será usada, se
-> houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de
-> fato existir, pois ainda não é a hora de apresentar requisitos
-> detalhados ou projetos.
->
-> Nesse momento, o grupo pode optar por fazer uso
-> de ferramentas como Design Thinking, que permite um olhar de ponta a
-> ponta para o problema.
->
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
-
+   
 ## Objetivos
 
-......  COLOQUE AQUI O SEU TEXTO ......
+O principal objetivo da plataforma "Blood-On" é aumentar a oferta de sangue em hospitais e clínicas através da conscientização das pessoas e esclarecimentos acerca do tema. Esta ferramenta foi desenvolvida com a finalidade de estabelecer uma conexão eficiente, prática e segura entre doadores e instituições de coleta de sangue, visando maximizar o número de doações e assegurar que estes centros de coleta disponham de estoques adequados para atender às demandas dos pacientes.
 
-> Aqui você deve descrever os objetivos do trabalho indicando que o
-> objetivo geral é desenvolver um software para solucionar o problema
-> apresentado acima. Apresente também alguns (pelo menos 2) objetivos
-> específicos dependendo de onde você vai querer concentrar a sua
-> prática investigativa, ou como você vai aprofundar no seu trabalho.
-> 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Para alcançar o objetivo acima os doadores poderão contar com diversos recursos, dentre eles:
+ -Cadastro único e com respeito à proteção dos dados conforme exige a LGPD.
+ -Perfil que deverá ser preenchido uma única vez, mas que poderá ser atualizado afim de agilizar a próxima doação.
+ -Tela com revisão dos requisitos para doação somente quando necessário e de forma bastante prática.
+ -Acesso aos Centros de captação de sangue mais próximos, bem como o horário de funcionamento e dados do contato do estabelecimento.
+ -Histórico de doações.
+ -Outros.
 
 ## Justificativa
 
-......  COLOQUE AQUI O SEU TEXTO ......
+A doação de sangue é uma demonstração essencial de solidariedade que pode literalmente salvar vidas. Entretanto, é comum encontrar pessoas que desconhecem os procedimentos e locais adequados para realizar essa nobre ação, enquanto outras pessoas se deparam com obstáculos importantes que as impedem de contribuir. A plataforma Blood-On surge como uma resposta a esses desafios, visando eliminar essas barreiras ao oferecer uma forma intuitiva e acessível. Nosso objetivo é não apenas fornecer um meio conveniente para doar sangue, mas também educar e motivar os doadores, facilitando assim o processo de doação de sangue para todos os envolvidos.
 
-> Descreva a importância ou a motivação para trabalhar com esta aplicação
-> que você escolheu. Indique as razões pelas quais você escolheu seus
-> objetivos específicos ou as razões para aprofundar em certos aspectos
-> do software.
-> 
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e
-> dados estatísticos, que podem ser apresentados, com o objetivo de
-> esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição
-> textual, ou diagramas de personas, mapa de stakeholders, ou como o
-> grupo achar mais conveniente.
-> 
-> **Links Úteis**:
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Nosso público-alvo inclui:
+ -Potenciais doadores - Pessoas saudáveis com idade entre 18 e 65 anos.
+ -Hospitais e clínicas - Estabelecimentos de saúde que dependem do suprimento de sangue para realizar transfusões e procedimentos médicos.
+ -Profissionais da saúde - Médicos, enfermeiros e outros profissionais da saúde que estejam envolvidos no processo de transfusão de sangue e que possam trabalhar na conscientização dos pacientes e de seus familiares afim de conseguir mais doações.
+ -Centros de coleta - Instituições responsáveis pela coleta, armazenamento e distribuição de sangue.
+ -População em geral -  Indivíduos que podem não ser doadores regulares, mas que podem ser sensibilizados e educados sobre a importância da doação de sangue e encorajados a participar.
+ 
  
 # Especificações do Projeto
 
