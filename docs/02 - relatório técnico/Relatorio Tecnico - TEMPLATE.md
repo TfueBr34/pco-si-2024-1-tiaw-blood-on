@@ -1,22 +1,18 @@
 <<<<<<< HEAD:docs/02 - relatório técnico/Relatorio Tecnico - TEMPLATE.md
 # Informações do Projeto
-`TÍTULO DO PROJETO`  
+`BLOOD-ON: SOLIDARIEDADE E INOVAÇÃO NA VEIA - UMA TRANSFUSÃO DE AMOR`  
 
 ......  COLOQUE AQUI O SEU TEXTO ......
 
-`CURSO` 
-
-......  COLOQUE AQUI O SEU TEXTO ......
+`SISTEMA DE INFORMAÇÃO/ANÁLISE E DESENVOLVIMENTO DE SISTEMAS` 
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua a lista dos membros da equipe com seus nomes completos.
->
-> Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+- CAIO HENRIQUE SILVA MOURÃO
+- CAIQUE VILLARREAL
+- FERNANDO OLIVEIRA SOARES
+- SAMUEL VITAL SANTOS SILVA
+- YAM CAYO CARDOSO DE SOUZA TEIXEIRA
 
 # Estrutura do Documento
 
@@ -54,7 +50,8 @@
 
 
 # Introdução
-A doação de sangue é um ato de extrema importância para a saúde pública, sendo fundamental para salvar vidas em situações de emergência, no tratamento de doenças crônicas e na realização de procedimentos médicos complexos. No entanto, apesar de sua relevância, a escassez de sangue nas agências transfusionais é uma realidade enfrentada por muitas pessoas no mundo todo. Esta escassez é agravada por fatores tais como desinformação, burocracias e dificuldade na logística. É neste contexto que surge a Blood-On, plataforma que pretende jogar luz neste assunto e encurtar as distâncias entre o potencial doador e o paciente que tanto precisa do sangue.
+
+A doação de sangue é um ato de extrema importância para a saúde pública, sendo fundamental para salvar vidas em situações de emergência, no tratamento de doenças crônicas e na realização de procedimentos médicos complexos. No entanto, apesar de sua relevância, a escassez de sangue nas agências transfusionais é uma realidade enfrentada por muitas pessoas no mundo todo. Esta escassez é agravada por fatores tais como desinformação, burocracias e dificuldade na logística. É neste contexto que surge a Blood-On, plataforma que pretende jogar luz nesse assunto e encurtar as distâncias entre o potencial doador e o paciente que tanto precisa do sangue.
 
 ## Problema
 
@@ -67,29 +64,28 @@ De acordo com as entrevistas feitas em campo identificamos problemas importantes
    
 ## Objetivos
 
-O principal objetivo da plataforma "Blood-On" é aumentar a oferta de sangue em hospitais e clínicas através da conscientização das pessoas e esclarecimentos acerca do tema. Esta ferramenta foi desenvolvida com a finalidade de estabelecer uma conexão eficiente, prática e segura entre doadores e instituições de coleta de sangue, visando maximizar o número de doações e assegurar que estes centros de coleta disponham de estoques adequados para atender às demandas dos pacientes.
+O principal objetivo da plataforma Blood-On é aumentar a oferta de sangue em hospitais e clínicas através da conscientização das pessoas e esclarecimentos acerca do tema. Esta ferramenta foi desenvolvida com a finalidade de estabelecer uma conexão eficiente, prática e segura entre doadores e instituições de coleta de sangue, visando maximizar o número de doações e assegurar que estes centros de coleta disponham de estoques adequados para atender às demandas dos pacientes.
 
-Para alcançar o objetivo acima os doadores poderão contar com diversos recursos, dentre eles:
- - Cadastro único e com respeito à proteção dos dados conforme exige a LGPD.
- - Perfil que deverá ser preenchido uma única vez, mas que poderá ser atualizado afim de agilizar a próxima doação.
- - Tela com revisão dos requisitos para doação somente quando necessário e de forma bastante prática.
- - Acesso aos Centros de captação de sangue mais próximos, bem como o horário de funcionamento e dados do contato do estabelecimento.
- - Histórico de doações.
- - Outros.
+Para alcançar o objetivo acima os doadores poderão contar com diversos recursos na plataforma proposta, dentre eles:
+  - Cadastro único e com respeito à proteção dos dados conforme exige a LGPD.
+  - Perfil que deverá ser preenchido uma única vez, mas que poderá ser atualizado a fim de agilizar a próxima doação.
+  - Tela com revisão dos requisitos para doação somente quando necessário e de forma bastante prática.
+  - Acesso aos Centros de captação de sangue mais próximos, bem como o horário de funcionamento e dados do contato do estabelecimento.
+  - Histórico de doações.
+  - Outros.
 
 ## Justificativa
 
-A doação de sangue é uma demonstração essencial de solidariedade que pode literalmente salvar vidas. Entretanto, é comum encontrar pessoas que desconhecem os procedimentos e locais adequados para realizar essa nobre ação, enquanto outras pessoas se deparam com obstáculos importantes que as impedem de contribuir. A plataforma Blood-On surge como uma resposta a esses desafios, visando eliminar essas barreiras ao oferecer uma forma intuitiva e acessível. Nosso objetivo é não apenas fornecer um meio conveniente para doar sangue, mas também educar e motivar os doadores, facilitando assim o processo de doação de sangue para todos os envolvidos.
+A doação de sangue é uma demonstração essencial de solidariedade que pode salvar vidas. Entretanto, durante as entrevistas qualitativas feitas pelo grupo foi percebido que é comum encontrar pessoas que desconhecem os procedimentos e locais adequados para realizar essa nobre ação, enquanto outras pessoas se sentem desmotivadas a participar desse processo. Com isso, a doação de sangue se encontra em um estado crítico, onde determinados tipos sanguíneos possuem estoques consideravelmente baixos e precisam de novos doadores, conforme divulgado pelo portal Hemominas. A plataforma Blood-On surge como uma resposta a esses desafios, visando eliminar essas barreiras ao oferecer uma forma intuitiva e acessível de buscar e contatar as instituições de coleta de sangue. Nosso objetivo é não apenas fornecer um meio conveniente para doar sangue, mas também educar e motivar os doadores, facilitando assim o processo de doação para todos os envolvidos.
 
 
 ## Público-Alvo
 
 Nosso público-alvo inclui:
- - Potenciais doadores: Pessoas saudáveis com idade entre 18 e 65 anos.
- - Hospitais e clínicas: Estabelecimentos de saúde que dependem do suprimento de sangue para realizar transfusões e procedimentos médicos.
- - Profissionais da saúde: Médicos, enfermeiros e outros profissionais da saúde que estejam envolvidos no processo de transfusão de sangue e que possam trabalhar na conscientização dos pacientes e de seus familiares afim de conseguir mais doações.
- - Centros de coleta: Instituições responsáveis pela coleta, armazenamento e distribuição de sangue.
- - População em geral: Indivíduos que podem não ser doadores regulares, mas que podem ser sensibilizados e educados sobre a importância da doação de sangue e encorajados a participar.
+ - Potenciais doadores - Pessoas saudáveis com idade entre 18 e 69 anos, residentes  na região metropolitana de Belo Horizonte.
+ - Hospitais e clínicas - Estabelecimentos de saúde que dependem do suprimento de sangue para realizar transfusões e procedimentos médicos, localizados na região metropolitana de Belo Horizonte.
+ - Profissionais da saúde - Médicos, enfermeiros e outros profissionais da saúde que estejam envolvidos no processo de transfusão de sangue, podendo trabalhar na conscientização dos pacientes e de seus familiares, e que residem na região metropolitana de Belo Horizonte.
+ - Centros de coleta - Instituições responsáveis pela coleta, armazenamento e distribuição de sangue, localizados na região metropolitana de Belo Horizonte.
  
  
 # Especificações do Projeto
@@ -257,33 +253,25 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 # Metodologia
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Para garantir o sucesso e a eficiência do projeto Blood-On, adotamos uma abordagem robusta e adaptativa, composta por diversas práticas e ferramentas colaborativas, tais como:
 
-> Nesta parte do documento, você deve apresentar a metodologia 
-> adotada pelo grupo, descrevendo o processo de trabalho baseado nas metodologias ágeis, 
-> a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a
-> gestão de configuração do projeto via GitHub.
->
-> Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido
-> pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar
-> o andamento do projeto, a execução das tarefas e o status de desenvolvimento
-> da solução.
-> 
-> **Links Úteis**:
-> - [Tutorial Trello](https://trello.com/b/8AygzjUA/tutorial-trello)
-> - [Gestão ágil de projetos com o Trello](https://www.youtube.com/watch?v=1o9BOMAKBRE)
-> - [Gerência de projetos - Trello com Scrum](https://www.youtube.com/watch?v=DHLA8X_ujwo)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+## Organização da equipe e divisão de papéis:
+            	Inicialmente, discutimos em reunião os tipos de trabalho das tarefas bem como os perfis dos integrantes do time a fim de atribuir habilidades prévias com desafios futuros e com isso reduzirmos o tempo das entregas. A ideia é trabalhar com uma curva de aprendizado menor. Por exemplo, os membros com mais facilidade em desenvolvimento de software seriam designados para a equipe de desenvolvimento, enquanto aqueles com experiência em design de interface seriam alocados na equipe de design. Além disso, foi designado um líder de equipe para coordenar as atividades, facilitar a comunicação e garantir o alinhamento dos objetivos do projeto.
 
-## Divisão de Papéis
+## Organização das especificações do Projeto – Miro:
+Escolhemos utilizar a ferramenta Miro por se tratar de um ambiente visual e interativo que facilita a comunicação e promove a colaboração em equipe.
 
-......  COLOQUE AQUI O SEU TEXTO ......
+## Organização das tarefas – Trello:
+Utilizaremos a ferramenta Trello para criar um quadro Kanban personalizado que atenda às necessidades específicas do projeto Blood-On. Cada tarefa será representada por um cartão no quadro, contendo informações detalhadas sobre a atividade, prazo de conclusão e responsável pela execução. O quadro será dividido em colunas que representam os diferentes estágios do fluxo de trabalho, como "A fazer", "Em andamento" e "Concluído". Durante reuniões regulares de equipe, faremos uma revisão cuidadosa do quadro Kanban, identificando possíveis obstáculos, ajustando prioridades e realocando recursos conforme necessário.
 
-> Apresente a divisão de papéis e tarefas entre os membros do grupo.
->
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+## Metodologia Ágil:
+Decidimos nos basear nos princípios e práticas da metodologia ágil, como Scrum, para promover uma abordagem iterativa e incremental durante o desenvolvimento do projeto. Isso envolverá a divisão do projeto em iterações menores e mensuráveis, conhecidas como Sprints. Durante essas “Sprints” haverá reuniões periódicas de acompanhamento, para atualizar o progresso, identificar impedimentos e ajustar o plano conforme necessário. Ao final de cada sprint, será realizada uma revisão para revisar o trabalho concluído e adaptar o plano para o próximo ciclo de desenvolvimento.
+
+## Desenvolvimento colaborativo e versionamento – GitHub:
+            	Optamos para que o desenvolvimento colaborativo e o versionamento sejam realizados por meio do GitHub neste projeto. Escolhemos essa plataforma devido à sua reputação no mercado, destacando-se pela facilidade de uso e integração com outras ferramentas essenciais de desenvolvimento, como o VS Code.
+             
+## Tecnologias utilizadas para Desenvolvimento – HTML, CSS e JavaScript:
+            	Como trabalharemos na construção de um site, utilizaremos basicamente as linguagens HTML, CSS e Javascript. O editor escolhido foi o VS Code por este ser gratuito, leve, e possuir ótima integração com o GitHub, além de inúmeras extensões que facilitam o processo de desenvolvimento. 
 
 
 ## Ferramentas
