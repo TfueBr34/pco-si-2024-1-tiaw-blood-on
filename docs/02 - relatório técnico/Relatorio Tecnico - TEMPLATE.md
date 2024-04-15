@@ -134,9 +134,9 @@
 ## Personas e Mapas de Empatia
 
 Persona 1: <br>
-![image](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/95587943/9632a7cb-455a-4013-871c-18637d2b51c0)
+![image](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/95587943/9632a7cb-455a-4013-871c-18637d2b51c0) <br>
 Persona 2: <br>
-![image](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/95587943/572d4f14-221c-4ad5-91ab-7e351dad1eca)
+![image](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/95587943/572d4f14-221c-4ad5-91ab-7e351dad1eca) <br>
 Persona 3: <br>
 ![image](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/95587943/94e8460a-afdf-4611-89a1-7412a70a7526)
 
