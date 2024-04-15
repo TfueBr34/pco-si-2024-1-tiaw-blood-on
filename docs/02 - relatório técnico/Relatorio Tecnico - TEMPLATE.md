@@ -125,11 +125,8 @@
  
 # Especificações do Projeto
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Apresente uma visão geral do que será abordado nesta parte do
-> documento, enumerando as técnicas e/ou ferramentas utilizadas para
-> realizar a especificações do projeto
+Nessa parte do projeto iremos abordar: Personas, proposta de valor, histórias de usuarios, requisitos e restrições 
+Para fazermos isso utilizamos a ferramente "Miro".
 
 ## Personas e Mapas de Empatia
 
@@ -163,21 +160,18 @@
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-> Apresente aqui as histórias de usuário que são relevantes para o
-> projeto de sua solução. As Histórias de Usuário consistem em uma
-> ferramenta poderosa para a compreensão e elicitação dos requisitos
-> funcionais e não funcionais da sua aplicação. Se possível, agrupe as
-> histórias de usuário por contexto, para facilitar consultas
-> recorrentes à essa parte do documento.
->
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+|EU COMO... `PERSONA`        | QUERO/PRECISO ... `FUNCIONALIDADE`                |PARA ... `MOTIVO/VALOR`                 |
+|----------------------------|---------------------------------------------------|----------------------------------------|
+|Usuário do site             | Receber sangue                                    | Para fazer uma transfusão de sangue   |                   
+|Medico                      | Verificar a situação da doacao de um determinado tipo sanguineo| Para incentivar doadores desse tipo sanguineo a doarem |
+|Medico                      | Acessar informações sobre doação de sangue        | Para poder orientar meus pacientes e incentivá-los a doar sangue|
+|Designer gráfica            | Agendar minha próxima doação de sangue            | Para continuar fazendo a diferença na comunidade e ajudar aqueles que precisam|
+|Designer gráfica            | Encontrar um local de doação de sangue próximo    | Para poder contribuir regularmente para salvar vidas|
+|Digital influencer          | Compartilhar minha experiência de doação de sangue| Inspirar minha audiência a se envolver em ações altruístas| 
+|Doador de sangue            | Doar sangue                                       | Ajudar pessoas que precisam do meu tipo de sangue|
+|Designer gráfica            | Receber lembretes sobre a próxima data de doação  | Poder planejar minha agenda com antecedência e reservar um tempo para doar sangue|
+|Digital influencer          | Ter acesso a recursos visuais atrativos sobre doação de sangue| Para compartilhar e aumentar o impacto das minhas mensagens
+|Medico                      | Receber relatórios periódicos sobre a taxa de doação de sangue na região| Poder avaliar o progresso das campanhas de doação e identificar áreas que necessitam de mais esforços de conscientização.
 
 ## Requisitos
 
