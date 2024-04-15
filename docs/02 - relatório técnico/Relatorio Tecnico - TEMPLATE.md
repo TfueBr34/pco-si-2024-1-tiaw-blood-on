@@ -1,21 +1,15 @@
 # Informações do Projeto
-`TÍTULO DO PROJETO`  
+BLOOD-ON: SOLIDARIEDADE E INOVAÇÃO NA VEIA - UMA TRANSFUSÃO DE AMOR
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-`CURSO` 
-
-......  COLOQUE AQUI O SEU TEXTO ......
+SISTEMA DE INFORMAÇÃO/ANÁLISE E DESENVOLVIMENTO DE SISTEMAS 
 
 ## Participantes
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Inclua a lista dos membros da equipe com seus nomes completos.
->
-> Os membros do grupo são: 
-> - Fulano da Silva
-> - Ciclano Albuquerque
+- CAIO HENRIQUE SILVA MOURÃO
+- CAIQUE VILLARREAL
+- FERNANDO OLIVEIRA SOARES
+- SAMUEL VITAL SANTOS SILVA
+- YAM CAYO CARDOSO DE SOUZA TEIXEIRA
 
 # Estrutura do Documento
 
@@ -54,73 +48,42 @@
 
 # Introdução
 
+A doação de sangue é um ato de extrema importância para a saúde pública, sendo fundamental para salvar vidas em situações de emergência, no tratamento de doenças crônicas e na realização de procedimentos médicos complexos. No entanto, apesar de sua relevância, a escassez de sangue nas agências transfusionais é uma realidade enfrentada por muitas pessoas no mundo todo. Esta escassez é agravada por fatores tais como desinformação, burocracias e dificuldade na logística. É neste contexto que surge a Blood-On, plataforma que pretende jogar luz nesse assunto e encurtar as distâncias entre o potencial doador e o paciente que tanto precisa do sangue.
+
 ## Problema
 
-......  COLOQUE AQUI O SEU TEXTO ......
+De acordo com as entrevistas feitas em campo identificamos problemas importantes como:
+ - Falta de conhecimento sobre os requisitos necessários para ser considerado um doador apto - Muitas pessoas não sabem se estão aptas para doar sangue porque não conhecem os critérios necessários, como idade, peso e histórico médico.
+ - Dificuldade em encontrar locais próximos para doação de sangue - É difícil para algumas pessoas encontrar centros de doação de sangue perto delas, especialmente em áreas mais remotas.
+ - Desinformação sobre os horários de funcionamento dos centros de doação - As pessoas muitas vezes não sabem quando os centros de doação de sangue estão abertos, o que pode resultar em visitas desperdiçadas.
+ - Desconhecimento dos benefícios da doação - Muitas pessoas não sabem que doar sangue não só ajuda os pacientes, mas também pode ser benéfico para elas mesmas, como receber uma verificação de saúde gratuita, tirar folga no serviço, etc.
 
-> Nesse momento você deve apresentar o problema que a sua aplicação deve
-> resolver. No entanto, não é a hora de comentar sobre a aplicação.
-> Descreva também o contexto em que essa aplicação será usada, se
-> houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de
-> fato existir, pois ainda não é a hora de apresentar requisitos
-> detalhados ou projetos.
->
-> Nesse momento, o grupo pode optar por fazer uso
-> de ferramentas como Design Thinking, que permite um olhar de ponta a
-> ponta para o problema.
->
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
-
+   
 ## Objetivos
 
-......  COLOQUE AQUI O SEU TEXTO ......
+O principal objetivo da plataforma Blood-On é aumentar a oferta de sangue em hospitais e clínicas através da conscientização das pessoas e esclarecimentos acerca do tema. Esta ferramenta foi desenvolvida com a finalidade de estabelecer uma conexão eficiente, prática e segura entre doadores e instituições de coleta de sangue, visando maximizar o número de doações e assegurar que estes centros de coleta disponham de estoques adequados para atender às demandas dos pacientes.
 
-> Aqui você deve descrever os objetivos do trabalho indicando que o
-> objetivo geral é desenvolver um software para solucionar o problema
-> apresentado acima. Apresente também alguns (pelo menos 2) objetivos
-> específicos dependendo de onde você vai querer concentrar a sua
-> prática investigativa, ou como você vai aprofundar no seu trabalho.
-> 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Para alcançar o objetivo acima os doadores poderão contar com diversos recursos na plataforma proposta, dentre eles:
+  - Cadastro único e com respeito à proteção dos dados conforme exige a LGPD.
+  - Perfil que deverá ser preenchido uma única vez, mas que poderá ser atualizado a fim de agilizar a próxima doação.
+  - Tela com revisão dos requisitos para doação somente quando necessário e de forma bastante prática.
+  - Acesso aos Centros de captação de sangue mais próximos, bem como o horário de funcionamento e dados do contato do estabelecimento.
+  - Histórico de doações.
+  - Outros.
 
 ## Justificativa
 
-......  COLOQUE AQUI O SEU TEXTO ......
+A doação de sangue é uma demonstração essencial de solidariedade que pode salvar vidas. Entretanto, durante as entrevistas qualitativas feitas pelo grupo foi percebido que é comum encontrar pessoas que desconhecem os procedimentos e locais adequados para realizar essa nobre ação, enquanto outras pessoas se sentem desmotivadas a participar desse processo. Com isso, a doação de sangue se encontra em um estado crítico, onde determinados tipos sanguíneos possuem estoques consideravelmente baixos e precisam de novos doadores, conforme divulgado pelo portal Hemominas. A plataforma Blood-On surge como uma resposta a esses desafios, visando eliminar essas barreiras ao oferecer uma forma intuitiva e acessível de buscar e contatar as instituições de coleta de sangue. Nosso objetivo é não apenas fornecer um meio conveniente para doar sangue, mas também educar e motivar os doadores, facilitando assim o processo de doação para todos os envolvidos.
 
-> Descreva a importância ou a motivação para trabalhar com esta aplicação
-> que você escolheu. Indique as razões pelas quais você escolheu seus
-> objetivos específicos ou as razões para aprofundar em certos aspectos
-> do software.
-> 
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e
-> dados estatísticos, que podem ser apresentados, com o objetivo de
-> esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Descreva quem serão as pessoas que usarão a sua aplicação indicando os
-> diferentes perfis. O objetivo aqui não é definir quem serão os
-> clientes ou quais serão os papéis dos usuários na aplicação. A ideia
-> é, dentro do possível, conhecer um pouco mais sobre o perfil dos
-> usuários: conhecimentos prévios, relação com a tecnologia, relações
-> hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição
-> textual, ou diagramas de personas, mapa de stakeholders, ou como o
-> grupo achar mais conveniente.
-> 
-> **Links Úteis**:
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Nosso público-alvo inclui:
+ - Potenciais doadores - Pessoas saudáveis com idade entre 18 e 69 anos, residentes  na região metropolitana de Belo Horizonte.
+ - Hospitais e clínicas - Estabelecimentos de saúde que dependem do suprimento de sangue para realizar transfusões e procedimentos médicos, localizados na região metropolitana de Belo Horizonte.
+ - Profissionais da saúde - Médicos, enfermeiros e outros profissionais da saúde que estejam envolvidos no processo de transfusão de sangue, podendo trabalhar na conscientização dos pacientes e de seus familiares, e que residem na região metropolitana de Belo Horizonte.
+ - Centros de coleta - Instituições responsáveis pela coleta, armazenamento e distribuição de sangue, localizados na região metropolitana de Belo Horizonte.
+ 
  
 # Especificações do Projeto
 
@@ -270,94 +233,42 @@ Visão geral da interação do usuário pelas telas do sistema.
 
 # Metodologia
 
-......  COLOQUE AQUI O SEU TEXTO ......
+Para garantir o sucesso e a eficiência do projeto Blood-On, adotamos uma abordagem robusta e adaptativa, composta por diversas práticas e ferramentas colaborativas, tais como:
 
-> Nesta parte do documento, você deve apresentar a metodologia 
-> adotada pelo grupo, descrevendo o processo de trabalho baseado nas metodologias ágeis, 
-> a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a
-> gestão de configuração do projeto via GitHub.
->
-> Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido
-> pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar
-> o andamento do projeto, a execução das tarefas e o status de desenvolvimento
-> da solução.
-> 
-> **Links Úteis**:
-> - [Tutorial Trello](https://trello.com/b/8AygzjUA/tutorial-trello)
-> - [Gestão ágil de projetos com o Trello](https://www.youtube.com/watch?v=1o9BOMAKBRE)
-> - [Gerência de projetos - Trello com Scrum](https://www.youtube.com/watch?v=DHLA8X_ujwo)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+## Organização da equipe e divisão de papéis:
+Inicialmente, discutimos em reunião os tipos de trabalho das tarefas bem como os perfis dos integrantes do time a fim de atribuir habilidades prévias com desafios futuros e com isso reduzirmos o tempo das entregas. A ideia é trabalhar com uma curva de aprendizado menor. Por exemplo, os membros com mais facilidade em desenvolvimento de software seriam designados para a equipe de desenvolvimento, enquanto aqueles com experiência em design de interface seriam alocados na equipe de design. Além disso, foi designado um líder de equipe para coordenar as atividades, facilitar a comunicação e garantir o alinhamento dos objetivos do projeto.
 
-## Divisão de Papéis
+## Organização das especificações do Projeto – Miro:
+Escolhemos utilizar a ferramenta Miro por se tratar de um ambiente visual e interativo que facilita a comunicação e promove a colaboração em equipe.
 
-......  COLOQUE AQUI O SEU TEXTO ......
+## Organização das tarefas – Trello:
+Utilizaremos a ferramenta Trello para criar um quadro Kanban personalizado que atenda às necessidades específicas do projeto Blood-On. Cada tarefa será representada por um cartão no quadro, contendo informações detalhadas sobre a atividade, prazo de conclusão e responsável pela execução. O quadro será dividido em colunas que representam os diferentes estágios do fluxo de trabalho, como "A fazer", "Em andamento" e "Concluído". Durante reuniões regulares de equipe, faremos uma revisão cuidadosa do quadro Kanban, identificando possíveis obstáculos, ajustando prioridades e realocando recursos conforme necessário.
 
-> Apresente a divisão de papéis e tarefas entre os membros do grupo.
->
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+## Prototipagem - Figma:
+Utilizamos a plataforma FIGMA para a criação das telas Wireframes por ser uma ferramenta versátil e fácil de utilizar, além de possuir a opção de trabalho colaborativo.
 
+## Criação da documentação - Google Docs:
+Utilizamos o editor de texto Google Docs para criação da documentação por ser uma ótima ferramenta para trabalho colaborativo, por ser gratuito e fácil.
+
+## Desenvolvimento colaborativo e versionamento – GitHub:
+Optamos para que o desenvolvimento colaborativo e o versionamento sejam realizados por meio do GitHub neste projeto. Escolhemos essa plataforma devido à sua reputação no mercado, destacando-se pela facilidade de uso e integração com outras ferramentas essenciais de desenvolvimento, como o VS Code.
+             
+## Tecnologias utilizadas para Desenvolvimento – HTML, CSS e JavaScript:
+Como trabalharemos na construção de um site, utilizaremos basicamente as linguagens HTML, CSS e Javascript. O editor escolhido foi o VS Code por este ser gratuito, leve, e possuir ótima integração com o GitHub, além de inúmeras extensões que facilitam o processo de desenvolvimento. 
+
+## Metodologia Ágil:
+Decidimos nos basear nos princípios e práticas da metodologia ágil, como Scrum, para promover uma abordagem iterativa e incremental durante o desenvolvimento do projeto. Isso envolverá a divisão do projeto em iterações menores e mensuráveis, conhecidas como Sprints. Durante essas “Sprints” haverá reuniões periódicas de acompanhamento, para atualizar o progresso, identificar impedimentos e ajustar o plano conforme necessário. Ao final de cada sprint, será realizada uma revisão para revisar o trabalho concluído e adaptar o plano para o próximo ciclo de desenvolvimento.
 
 ## Ferramentas
 
-......  COLOQUE AQUI O SEU TEXTO - SIGA O EXEMPLO DA TABELA ABAIXO  ......
-
 | Ambiente  | Plataforma              |Link de Acesso |
 |-----------|-------------------------|---------------|
-|Processo de Design Thinkgin  | Miro |  https://miro.com/XXXXXXX | 
-|Repositório de código | GitHub | https://github.com/XXXXXXX | 
-|Hospedagem do site | Heroku |  https://XXXXXXX.herokuapp.com | 
-|Protótipo Interativo | MavelApp ou Figma | https://figma.com/XXXXXXX | 
+|Processo de Design Thinkgin  | Miro |  [https://miro.com](https://miro.com/app/board/uXjVNjOsZMY=/) | 
+|Repositório de código | GitHub | [https://github.com](https://github.com/orgs/ICEI-PUC-Minas-PCO-SI/teams/blood-on) | 
+|Protótipo Interativo | MavelApp ou Figma | [https://figma.com](https://www.figma.com/files/team/1360648465270502134) | 
+|Ferramenta de comunicação | WhatsApp | [https://web.whatsapp.com](https://www.figma.com/files/team/1360648465270502134) | 
 
->
-> Liste as ferramentas empregadas no desenvolvimento do
-> projeto, justificando a escolha delas, sempre que possível.
-> 
-> As ferramentas empregadas no projeto são:
-> 
-> - Editor de código.
-> - Ferramentas de comunicação
-> - Ferramentas de diagramação
-> - Plataforma de hospedagem
-> 
-> O editor de código foi escolhido porque ele possui uma integração com o
-> sistema de versão. As ferramentas de comunicação utilizadas possuem
-> integração semelhante e por isso foram selecionadas. Por fim, para criar
-> diagramas utilizamos essa ferramenta por melhor captar as
-> necessidades da nossa solução.
-> 
-> **Links Úteis - Hospedagem**:
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Crie seu Site com o HostGator](https://www.hostgator.com.br/como-publicar-seu-site)
-> - [GoDady](https://br.godaddy.com/how-to)
-> - [GitHub Pages](https://pages.github.com/)
 
-## Controle de Versão
-
-......  COLOQUE AQUI O SEU TEXTO ......
-
-> Discuta como a configuração do projeto foi feita na ferramenta de
-> versionamento escolhida. Exponha como a gerência de tags, merges,
-> commits e branchs é realizada. Discuta como a gerência de issues foi
-> realizada.
-> A ferramenta de controle de versão adotada no projeto foi o
-> [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
-> foi utilizado para hospedagem do repositório `upstream`.
-> 
-> O projeto segue a seguinte convenção para o nome de branchs:
-> 
-> - `master`: versão estável já testada do software
-> - `unstable`: versão já testada do software, porém instável
-> - `testing`: versão em testes do software
-> - `dev`: versão de desenvolvimento do software
-> 
-> Quanto à gerência de issues, o projeto adota a seguinte convenção para
-> etiquetas:
-> 
-> - `bugfix`: uma funcionalidade encontra-se com problemas
-> - `enhancement`: uma funcionalidade precisa ser melhorada
-> - `feature`: uma nova funcionalidade precisa ser introduzida
 >
 > **Links Úteis**:
 > - [Tutorial GitHub](https://guides.github.com/activities/hello-world/)
