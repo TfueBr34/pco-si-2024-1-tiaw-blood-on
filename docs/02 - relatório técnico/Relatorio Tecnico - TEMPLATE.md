@@ -134,11 +134,14 @@
 ## Personas e Mapas de Empatia
 
 Persona 1: <br>
-![image](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/95587943/9632a7cb-455a-4013-871c-18637d2b51c0) <br>
+![image](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/95587943/9632a7cb-455a-4013-871c-18637d2b51c0) <br> ![image](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/95587943/010de9c2-c366-44c1-9e06-0ebf1846226b)
+<br>
 Persona 2: <br>
-![image](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/95587943/572d4f14-221c-4ad5-91ab-7e351dad1eca) <br>
+![image](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/95587943/572d4f14-221c-4ad5-91ab-7e351dad1eca) <br> ![image](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/95587943/bb4d6153-e12d-47a3-9b45-5d7dae35f313)
+<br>
 Persona 3: <br>
-![image](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/95587943/94e8460a-afdf-4611-89a1-7412a70a7526)
+![image](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/95587943/94e8460a-afdf-4611-89a1-7412a70a7526)<br> ![image](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/95587943/7dd509bd-87f3-4fef-9909-4513654524bd)
+
 
 ## Histórias de Usuários
 
