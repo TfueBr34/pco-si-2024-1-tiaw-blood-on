@@ -1,10 +1,7 @@
-<<<<<<< HEAD:docs/02 - relatório técnico/Relatorio Tecnico - TEMPLATE.md
 # Informações do Projeto
-`BLOOD-ON: SOLIDARIEDADE E INOVAÇÃO NA VEIA - UMA TRANSFUSÃO DE AMOR`  
+BLOOD-ON: SOLIDARIEDADE E INOVAÇÃO NA VEIA - UMA TRANSFUSÃO DE AMOR
 
-......  COLOQUE AQUI O SEU TEXTO ......
-
-`SISTEMA DE INFORMAÇÃO/ANÁLISE E DESENVOLVIMENTO DE SISTEMAS` 
+SISTEMA DE INFORMAÇÃO/ANÁLISE E DESENVOLVIMENTO DE SISTEMAS 
 
 ## Participantes
 
@@ -256,7 +253,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 Para garantir o sucesso e a eficiência do projeto Blood-On, adotamos uma abordagem robusta e adaptativa, composta por diversas práticas e ferramentas colaborativas, tais como:
 
 ## Organização da equipe e divisão de papéis:
-            	Inicialmente, discutimos em reunião os tipos de trabalho das tarefas bem como os perfis dos integrantes do time a fim de atribuir habilidades prévias com desafios futuros e com isso reduzirmos o tempo das entregas. A ideia é trabalhar com uma curva de aprendizado menor. Por exemplo, os membros com mais facilidade em desenvolvimento de software seriam designados para a equipe de desenvolvimento, enquanto aqueles com experiência em design de interface seriam alocados na equipe de design. Além disso, foi designado um líder de equipe para coordenar as atividades, facilitar a comunicação e garantir o alinhamento dos objetivos do projeto.
+Inicialmente, discutimos em reunião os tipos de trabalho das tarefas bem como os perfis dos integrantes do time a fim de atribuir habilidades prévias com desafios futuros e com isso reduzirmos o tempo das entregas. A ideia é trabalhar com uma curva de aprendizado menor. Por exemplo, os membros com mais facilidade em desenvolvimento de software seriam designados para a equipe de desenvolvimento, enquanto aqueles com experiência em design de interface seriam alocados na equipe de design. Além disso, foi designado um líder de equipe para coordenar as atividades, facilitar a comunicação e garantir o alinhamento dos objetivos do projeto.
 
 ## Organização das especificações do Projeto – Miro:
 Escolhemos utilizar a ferramenta Miro por se tratar de um ambiente visual e interativo que facilita a comunicação e promove a colaboração em equipe.
@@ -268,10 +265,10 @@ Utilizaremos a ferramenta Trello para criar um quadro Kanban personalizado que a
 Decidimos nos basear nos princípios e práticas da metodologia ágil, como Scrum, para promover uma abordagem iterativa e incremental durante o desenvolvimento do projeto. Isso envolverá a divisão do projeto em iterações menores e mensuráveis, conhecidas como Sprints. Durante essas “Sprints” haverá reuniões periódicas de acompanhamento, para atualizar o progresso, identificar impedimentos e ajustar o plano conforme necessário. Ao final de cada sprint, será realizada uma revisão para revisar o trabalho concluído e adaptar o plano para o próximo ciclo de desenvolvimento.
 
 ## Desenvolvimento colaborativo e versionamento – GitHub:
-            	Optamos para que o desenvolvimento colaborativo e o versionamento sejam realizados por meio do GitHub neste projeto. Escolhemos essa plataforma devido à sua reputação no mercado, destacando-se pela facilidade de uso e integração com outras ferramentas essenciais de desenvolvimento, como o VS Code.
+Optamos para que o desenvolvimento colaborativo e o versionamento sejam realizados por meio do GitHub neste projeto. Escolhemos essa plataforma devido à sua reputação no mercado, destacando-se pela facilidade de uso e integração com outras ferramentas essenciais de desenvolvimento, como o VS Code.
              
 ## Tecnologias utilizadas para Desenvolvimento – HTML, CSS e JavaScript:
-            	Como trabalharemos na construção de um site, utilizaremos basicamente as linguagens HTML, CSS e Javascript. O editor escolhido foi o VS Code por este ser gratuito, leve, e possuir ótima integração com o GitHub, além de inúmeras extensões que facilitam o processo de desenvolvimento. 
+Como trabalharemos na construção de um site, utilizaremos basicamente as linguagens HTML, CSS e Javascript. O editor escolhido foi o VS Code por este ser gratuito, leve, e possuir ótima integração com o GitHub, além de inúmeras extensões que facilitam o processo de desenvolvimento. 
 
 
 ## Ferramentas
