@@ -173,18 +173,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
-
-
-### Requisitos não Funcionais
-
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
-
-### Requisitos Funcionais
-
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
 
 |RF-001| Cadastro de Usuários: Permitir que os usuários (tanto doadores quanto receptores) se cadastrem no site fornecendo informações básicas, como nome, idade, tipo sanguíneo, e-mail e localização. | ALTO | 
 
