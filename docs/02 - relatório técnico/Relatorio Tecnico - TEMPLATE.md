@@ -267,8 +267,34 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 
 ## Wireframes
+> - Tela de login (pessoas físicas doam e jurídicas recebem a doação);
+ ![Imagem do WhatsApp de 2024-04-14 à(s) 20 18 43_0b5c3c8e](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/164426484/aa4617e6-a29b-433f-be86-98a243db0f60)
+> - Tela de informação sobre a doação (tela para conscientizar os usuários sobre a doação de sangue);
+![Imagem do WhatsApp de 2024-04-14 à(s) 20 18 43_e38ba06c](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/164426484/85bbe900-bdcc-4bf2-8a3f-68577af3c111)
+> - Tela de cadastro (Pessoa Física);
+![Imagem do WhatsApp de 2024-04-14 à(s) 20 18 43_e392981a](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/164426484/ee5ebd9f-b718-4843-9fcd-caa654a086ef)
+> - Tela de cadastro (Pessoa Jurídica);
+![Imagem do WhatsApp de 2024-04-14 à(s) 20 18 43_49346261](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/164426484/58114466-2c79-47c0-9ecc-7e8e69b68355)
+> - Tela de perfil (Doador PF);
+![Imagem do WhatsApp de 2024-04-14 à(s) 20 18 43_69ab4113](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/164426484/fe2aabb7-59b9-4446-b739-3e3a3e05596e)
+> - Tela de perfil (Receptor PJ);
+![Imagem do WhatsApp de 2024-04-14 à(s) 20 18 44_6b2d3462](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/164426484/ec970d28-b8d1-4e83-a2fd-fcd483509021)
+> - Tela de busca de bancos de sangue;
+![Imagem do WhatsApp de 2024-04-14 à(s) 20 18 43_9f1a18b9](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/164426484/9cf18de1-cdb3-44c5-a028-e71d639b42cf)
+> - Tela do banco com o contato, detalhes, nota e comentários sobre o banco;
+![Imagem do WhatsApp de 2024-04-14 à(s) 18 05 17_6f4d9790](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/164426484/2c4eca0f-7c8f-45ba-8ad4-11ab61d6cf70)
+> - Tela de mural;
+![image](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/164426484/8739378d-2c56-4e54-aa03-43b2fd75f48f)
+> - Tela de comentários sobre a publicação no mural:
+![Imagem do WhatsApp de 2024-04-14 à(s) 20 18 43_22bed698](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/164426484/e29257c0-32da-4117-bfa0-084ebdc4f595)
+> - Tela Inicial
+![Imagem do WhatsApp de 2024-04-14 à(s) 20 32 31_1376303e](https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on/assets/164426484/6669bdbd-4f95-43c7-9edf-0c396819f83a)
 
-......  INCLUA AQUI OS WIREFRAMES DAS TELAS DA APLICAÇÃO COM UM BREVE DESCRITIVO ......
+
+
+
+
+
 
 > Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a
 > estrutura de um site web e seu relacionamentos entre suas
