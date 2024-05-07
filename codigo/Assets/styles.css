@@ -1,3 +1,4 @@
+/*Declarações Gerais*/
 body{
     margin: 0px;
     padding: 0px;
@@ -5,16 +6,31 @@ body{
     font-weight:bold;
 }
 
+/*CSS Header*/
 header{
     background-color: rgb(149, 0, 0);
     color: white;
-    padding: 1px;
+    padding: 5px;
 }
 
+/*CSS Main*/
 main{
     margin: 10px;
 }
 
+.topico, .post_field, textarea{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(217, 217, 217);
+    margin: 10px;
+    padding: 10px;
+}
+
+#post_topic{
+    resize: none;
+}
+
+/*CSS Footer*/
 footer{
     background-color: rgb(149, 0, 0);
     color: white;
