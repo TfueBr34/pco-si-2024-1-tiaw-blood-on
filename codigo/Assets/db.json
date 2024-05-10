@@ -1,0 +1,31 @@
+{
+    "topicos":[
+        {
+            "id_user": 1,
+            "id_topico":1,
+            "texto": "Texto Padrão",
+            "num_curtida": 0,
+            "comentarios":[
+                {
+                    "id_user": 2,
+                    "id_comentario":1,
+                    "texto": "Texto Padrão",
+                    "num_curtida": 0
+                }
+            ]
+        }
+    ],
+
+    "usuarios":[
+        {
+            "id_user": 1,
+            "username": "João Afonso",
+            "url_pf_pic": "Assets/foto_perfil.png"
+        },
+        {
+            "id_user": 2,
+            "username": "Pedro Costa",
+            "url_pf_pic": "Assets/foto_perfil.png"
+        }
+    ]
+}

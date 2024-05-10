@@ -7,9 +7,9 @@ window.addEventListener("load", () => {
     }, false);
 
     text.addEventListener("blur", function(){
-        setTimeout(function() {
+        if(text.value.trim() == ""){
             post.classList.add("d-none");
-          }, 100);
+        }
     }, false);
 
     post.addEventListener("click", function(event){
@@ -20,6 +20,7 @@ window.addEventListener("load", () => {
         }else{
             alert("Postado!");
             text.value = "";
+            post.classList.add("d-none");
         }
     }, false);
 });
