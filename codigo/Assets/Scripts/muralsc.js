@@ -1,11 +1,14 @@
+//Declaração das rotas do JSON Server e da url atual da página
 const url_topico = "http://localhost:3000/topicos";
 const url_usuario = "http://localhost:3000/usuarios";
 const url_page = window.location.href;
 
+//Função que salva o usuário atual no storage da sessão
 function set_user(usuario){
     sessionStorage.setItem("usuario",JSON.stringify(usuario));
 }
 
+//Função que verifica se o usuário já está salvo na sessão e, se não estiver, determinar o usuário que será salvo
 async function verify_user(){
     let usuario = sessionStorage.getItem("usuario");
     
@@ -15,19 +18,24 @@ async function verify_user(){
     }
 }
 
+//Função de coleta de informações do JSON Server dado o id do elemento
 async function get_info(url) {
     const res = await fetch(url);
   
     return res.json();
 }
 
+//Função que constrói a porção do HTML que apresenta os tópicos salvos no JSON Server
 function construir_topicos(){
+    //Realiza a requisição dos dados no JSON Server
     fetch(url_topico).then(res => res.json()).then(async topicos => {
         let html_topicos = ""; 
+        //Para cada dado encontrado adiciona o código HTML na página
         for(let i=0; i < topicos.length; i++){
             let id_user = topicos[i].user;
             let user = await get_info(url_usuario+`?id=${id_user}`);
             let current_user = JSON.parse(sessionStorage.getItem("usuario"));
+            //Verifica se o usuário da sessão é o usuário do tópico alterando o HTML inserido se for
             if(current_user[0].id == user[0].id){
                 html_topicos += `
                 <div id="${topicos[i].id}" class="topico container">
@@ -85,11 +93,13 @@ function construir_topicos(){
                 </div>`;
             }
             section_topicos.innerHTML = html_topicos;
+            //Salva o último id dos tópico do JSON
             last_id_topico = parseInt(topicos[i].id);
         }
     });
 }
 
+//Função que atualiza o tópico selecionado colocando mais uma curtida
 async function curtir_topico(id_topico){
     let topico = await get_info(url_topico+`?id=${id_topico}`);
     topico[0].num_curtida += 1;
@@ -103,6 +113,7 @@ async function curtir_topico(id_topico){
     }).then(res => res.json()).then(() => location.reload());
 }
 
+//Função que deleta o tópico selecionado
 function deletar_topico(id_topico){
     if(confirm("Deseja mesmo deletar o tópico?\nTodos os comentários e curtidas serão perdidos")){
         fetch(`${url_topico}/${id_topico}`,{
@@ -111,6 +122,7 @@ function deletar_topico(id_topico){
     }
 }
 
+//Função que adiciona um tópico no JSON
 function add_topico(texto){
     last_id_topico+=1;
     let usuario = JSON.parse(sessionStorage.getItem("usuario"));
@@ -130,6 +142,7 @@ function add_topico(texto){
     }).then(res => res.json()).then(() => location.reload());
 }
 
+//Função que deleta um comentário
 async function deletar_comentario(id_comentario){
     if(confirm("Deseja mesmo deletar o comentário?")){
         let id_topico = url_page.split("=")[1];
@@ -163,6 +176,7 @@ async function deletar_comentario(id_comentario){
     }
 }
 
+//Função que constrói a porção do HTML que apresenta os comentarios do tópico selecionado
 async function construir_comentarios(){
     let id_topico = url_page.split("=")[1];
     let topico = await get_info(url_topico+`?id=${id_topico}`);
@@ -171,6 +185,7 @@ async function construir_comentarios(){
     let current_user = JSON.parse(sessionStorage.getItem("usuario"));
     let div_topico = document.getElementById("topico");
     let html_topico = "";
+    //Essa porção adiciona o tópico no começo da página, da mesma forma que a função construir_tópicos
     if(current_user[0].id == user[0].id){
         html_topico = `
         <div class="row">
@@ -224,9 +239,12 @@ async function construir_comentarios(){
         </div>`;
     }
     div_topico.innerHTML = html_topico;
+
+    //Para cada comentário presente no código adiciona ele no HTML
     for(let i=0; i < topico[0].comentarios.length; i++){
         let user = await get_info(url_usuario+`?id=${topico[0].comentarios[i].user}`);
         let html_comentarios = "";
+        //Verifica se o usuário da sessão é o usuário do comentário alterando o HTML inserido se for
         if(current_user[0].id == user[0].id){
             html_comentarios = `
             <div class="topico container">
@@ -284,10 +302,12 @@ async function construir_comentarios(){
             </div>`;
         }
         comentarios.innerHTML += html_comentarios;
+        //Salva o último id dos comentários do tópico
         last_id_comentario = parseInt(topico[0].comentarios[i].id);
     }
 }
 
+//Função que adiciona um comentário no tópico
 async function add_comentario(texto){
     last_id_comentario+=1;
     let id_topico = url_page.split("=")[1];
@@ -316,6 +336,7 @@ async function add_comentario(texto){
     }).then(res => res.json()).then(() => location.reload());
 }
 
+//Função para curtir um comentário do tópico
 async function curtir_comentario(id_comentario){
     let id_topico = url_page.split("=")[1];
     let topico = await get_info(url_topico+`?id=${id_topico}`);
@@ -330,29 +351,38 @@ async function curtir_comentario(id_comentario){
     }).then(res => res.json()).then(() => location.reload());
 }
 
+//Função que copia o link atual da página para a área de transferência
 function copy_link(){
     navigator.clipboard.writeText(url_page);
     alert("Link de compartilhamento copiado para a área de tranferência!");
 }
 
 verify_user();
+
+//Verifica se a página atual é a mural ou comentários
 if(url_page.includes("comentario")){
 
     construir_comentarios();
     var last_id_comentario;
+
+    //Espera a página carregar para continuar
     window.addEventListener("load", function () {
         let text = document.getElementById("postagem");
-        let post = document.querySelector("#form_post button"); 
+        let post = document.querySelector("#form_post button");
+
+        //Faz com que o botão de postar seja visível ao clicar na área de texto
         text.addEventListener("focus", function(){
             post.classList.remove("d-none");
         }, false);
         
+        //Faz com que o botão de postar não seja mais visível ao clicar fora da área de texto
         text.addEventListener("blur", function(){
             if(text.value.trim() == ""){
                 post.classList.add("d-none");
             }
         }, false);
         
+        //Configura o comportamento do botão de postar (Posta o comentário se houver texto escrito na área de texto)
         post.addEventListener("click", function(event){
             event.preventDefault();
             let postagem = text.value.trim();
@@ -370,19 +400,25 @@ if(url_page.includes("comentario")){
     construir_topicos();
     var section_topicos = document.getElementById("topicos");
     var last_id_topico;
+
+    //Espera a página carregar para continuar
     window.addEventListener("load", function () {
         let text = document.getElementById("postagem");
         let post = document.querySelector("#form_post button");
+
+        //Faz com que o botão de postar seja visível ao clicar na área de texto
         text.addEventListener("focus", function(){
             post.classList.remove("d-none");
         }, false);
         
+        //Faz com que o botão de postar não seja mais visível ao clicar fora da área de texto
         text.addEventListener("blur", function(){
             if(text.value.trim() == ""){
                 post.classList.add("d-none");
             }
         }, false);
         
+        //Configura o comportamento do botão de postar (Posta o tópico se houver texto escrito na área de texto)
         post.addEventListener("click", function(event){
             event.preventDefault();
             let postagem = text.value.trim();
