@@ -21,43 +21,69 @@ async function get_info(url) {
     return res.json();
 }
 
-verify_user();
-
 function construir_topicos(){
     fetch(url_topico).then(res => res.json()).then(async topicos => {
-        let html_topicos = "";
+        let html_topicos = ""; 
         for(let i=0; i < topicos.length; i++){
             let id_user = topicos[i].user;
             let user = await get_info(url_usuario+`?id=${id_user}`);
-            html_topicos += `
-            <div class="topico container">
-                <div class="row">
-                    <div class="col-1 text-end">
-                        <img src="${user[0].url_pic}" alt="foto de perfil">
+            let current_user = JSON.parse(sessionStorage.getItem("usuario"));
+            if(current_user[0].id == user[0].id){
+                html_topicos += `
+                <div id="${topicos[i].id}" class="topico container">
+                    <div class="row">
+                        <div class="col-1 text-end">
+                            <img src="${user[0].url_pic}" alt="foto de perfil">
+                        </div>
+                        <div class="col-9 mt-1 text-start">
+                            <h6>${user[0].username}</h6>
+                        </div>
+                        <div class="col-2 text-end">
+                            <i class="fa-solid fa-trash" onclick="deletar_topico(${topicos[i].id})"></i>
+                        </div>
                     </div>
-                    <div class="col-9 mt-1 text-start">
-                        <h6>${user[0].username}</h6>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p>
+                            ${topicos[i].texto}
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-2 text-end">
-                        <i class="fa-solid fa-trash" onclick="deletar_topico(${topicos[i].id})"></i>
+                    <div class="row">
+                        <div class="col-12 text-end">
+                            <i class="fa-solid fa-thumbs-up"> ${topicos[i].num_curtida} </i>
+                            <a href="comentario.html?id=${topicos[i].id}"><i class="fa-solid fa-comment"></i></a>
+                            <i class="fa-solid fa-arrow-up-from-bracket" onclick="copy_link()"></i>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <p>
-                        ${topicos[i].texto}
-                        </p>
+                </div>`;
+            }else{
+                html_topicos += `
+                <div id="${topicos[i].id}" class="topico container">
+                    <div class="row">
+                        <div class="col-1 text-end">
+                            <img src="${user[0].url_pic}" alt="foto de perfil">
+                        </div>
+                        <div class="col-11 mt-1 text-start">
+                            <h6>${user[0].username}</h6>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 text-end">
-                        <i class="fa-solid fa-thumbs-up" onclick="curtir_topico(${topicos[i].id})"> ${topicos[i].num_curtida} </i>
-                        <a href="comentario.html?id=${topicos[i].id}"><i class="fa-solid fa-comment"></i></a>
-                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <p>
+                            ${topicos[i].texto}
+                            </p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            `;
+                    <div class="row">
+                        <div class="col-12 text-end">
+                            <i class="fa-solid fa-thumbs-up" onclick="curtir_topico(${topicos[i].id})"> ${topicos[i].num_curtida} </i>
+                            <a href="comentario.html?id=${topicos[i].id}"><i class="fa-solid fa-comment"></i></a>
+                            <i class="fa-solid fa-arrow-up-from-bracket" onclick="copy_link()"></i>
+                        </div>
+                    </div>
+                </div>`;
+            }
             section_topicos.innerHTML = html_topicos;
             last_id_topico = parseInt(topicos[i].id);
         }
@@ -142,8 +168,11 @@ async function construir_comentarios(){
     let topico = await get_info(url_topico+`?id=${id_topico}`);
     let comentarios = document.getElementById("comentarios");
     let user = await get_info(url_usuario+`?id=${topico[0].user}`);
+    let current_user = JSON.parse(sessionStorage.getItem("usuario"));
     let div_topico = document.getElementById("topico");
-    let html_topico = `
+    let html_topico = "";
+    if(current_user[0].id == user[0].id){
+        html_topico = `
         <div class="row">
             <div class="col-1 text-end">
                 <img src="${user[0].url_pic}" alt="foto de perfil">
@@ -165,41 +194,95 @@ async function construir_comentarios(){
         </div>
         <div class="row">
             <div class="col-12 text-end">
-                <i class="fa-solid fa-thumbs-up" onclick="curtir_topico(${topico[0].id})"> ${topico[0].num_curtida} </i>
-                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                <i class="fa-solid fa-thumbs-up"> ${topico[0].num_curtida} </i>
+                <i class="fa-solid fa-arrow-up-from-bracket" onclick="copy_link()"></i>
             </div>
         </div>`;
+    }else{
+        html_topico = `
+        <div class="row">
+            <div class="col-1 text-end">
+                <img src="${user[0].url_pic}" alt="foto de perfil">
+            </div>
+            <div class="col-11 mt-1 text-start">
+                <h6>${user[0].username}</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <p>
+                ${topico[0].texto}
+                </p>
+                <a href="comentario.html"><span></span></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-end">
+                <i class="fa-solid fa-thumbs-up" onclick="curtir_topico(${topico[0].id})"> ${topico[0].num_curtida} </i>
+                <i class="fa-solid fa-arrow-up-from-bracket" onclick="copy_link()"></i>
+            </div>
+        </div>`;
+    }
     div_topico.innerHTML = html_topico;
     for(let i=0; i < topico[0].comentarios.length; i++){
         let user = await get_info(url_usuario+`?id=${topico[0].comentarios[i].user}`);
-        let html_comentarios = `
-        <div class="topico container">
-            <div class="row">
-                <div class="col-1 text-end">
-                    <img src="${user[0].url_pic}" alt="foto de perfil">
+        let html_comentarios = "";
+        if(current_user[0].id == user[0].id){
+            html_comentarios = `
+            <div class="topico container">
+                <div class="row">
+                    <div class="col-1 text-end">
+                        <img src="${user[0].url_pic}" alt="foto de perfil">
+                    </div>
+                    <div class="col-9 mt-1 text-start">
+                        <h6>${user[0].username}</h6>
+                    </div>
+                    <div class="col-2 text-end">
+                        <i class="fa-solid fa-trash" onclick="deletar_comentario(${topico[0].comentarios[i].id})"></i>
+                    </div>
                 </div>
-                <div class="col-9 mt-1 text-start">
-                    <h6>${user[0].username}</h6>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>
+                        ${topico[0].comentarios[i].texto}
+                        </p>
+                        <a href="comentario.html"><span></span></a>
+                    </div>
                 </div>
-                <div class="col-2 text-end">
-                    <i class="fa-solid fa-trash" onclick="deletar_comentario(${topico[0].comentarios[i].id})"></i>
+                <div class="row">
+                    <div class="col-12 text-end">
+                        <i class="fa-solid fa-thumbs-up"> ${topico[0].comentarios[i].num_curtida} </i>
+                        <i class="fa-solid fa-arrow-up-from-bracket" onclick="copy_link()"></i>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p>
-                    ${topico[0].comentarios[i].texto}
-                    </p>
-                    <a href="comentario.html"><span></span></a>
+            </div>`;
+        }else{
+            html_comentarios = `
+            <div class="topico container">
+                <div class="row">
+                    <div class="col-1 text-end">
+                        <img src="${user[0].url_pic}" alt="foto de perfil">
+                    </div>
+                    <div class="col-11 mt-1 text-start">
+                        <h6>${user[0].username}</h6>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-12 text-end">
-                    <i class="fa-solid fa-thumbs-up" onclick="curtir_comentario(${topico[0].comentarios[i].id})"> ${topico[0].comentarios[i].num_curtida} </i>
-                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <p>
+                        ${topico[0].comentarios[i].texto}
+                        </p>
+                        <a href="comentario.html"><span></span></a>
+                    </div>
                 </div>
-            </div>
-        </div>`;
+                <div class="row">
+                    <div class="col-12 text-end">
+                        <i class="fa-solid fa-thumbs-up" onclick="curtir_comentario(${topico[0].comentarios[i].id})"> ${topico[0].comentarios[i].num_curtida} </i>
+                        <i class="fa-solid fa-arrow-up-from-bracket" onclick="copy_link()"></i>
+                    </div>
+                </div>
+            </div>`;
+        }
         comentarios.innerHTML += html_comentarios;
         last_id_comentario = parseInt(topico[0].comentarios[i].id);
     }
@@ -247,6 +330,12 @@ async function curtir_comentario(id_comentario){
     }).then(res => res.json()).then(() => location.reload());
 }
 
+function copy_link(){
+    navigator.clipboard.writeText(url_page);
+    alert("Link de compartilhamento copiado para a área de tranferência!");
+}
+
+verify_user();
 if(url_page.includes("comentario")){
 
     construir_comentarios();

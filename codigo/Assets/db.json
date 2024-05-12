@@ -10,13 +10,13 @@
           "id": "1",
           "user": 2,
           "texto": "Meus Parabéns",
-          "num_curtida": 5
+          "num_curtida": 8
         },
         {
           "id": "2",
           "user": 2,
           "texto": "Continue assim",
-          "num_curtida": 5
+          "num_curtida": 7
         }
       ]
     },
@@ -24,25 +24,25 @@
       "id": "2",
       "user": 2,
       "texto": "O centro de coleta de doações na minha cidade é muito precário.<br> Mais alguém com esse problema?",
-      "num_curtida": 25,
+      "num_curtida": 32,
       "comentarios": [
         {
           "id": "1",
           "user": 1,
           "texto": "Na minha cidade é a mesma coisa",
-          "num_curtida": 20
+          "num_curtida": 21
         }
       ]
     }
   ],
   "usuarios": [
     {
-      "id": 1,
+      "id": "1",
       "username": "João Afonso",
       "url_pic": "Assets/foto_perfil.png"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "Pedro Costa",
       "url_pic": "Assets/foto_perfil.png"
     }
