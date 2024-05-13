@@ -4,7 +4,7 @@
       "id": "1",
       "user": 1,
       "texto": "Fiz a minha primeira doação de Sangue no hemominas!",
-      "num_curtida": 19,
+      "num_curtida": 23,
       "comentarios": [
         {
           "id": "1",
@@ -16,7 +16,7 @@
           "id": "2",
           "user": 2,
           "texto": "Continue assim",
-          "num_curtida": 7
+          "num_curtida": 8
         }
       ]
     },
@@ -24,7 +24,7 @@
       "id": "2",
       "user": 2,
       "texto": "O centro de coleta de doações na minha cidade é muito precário.<br> Mais alguém com esse problema?",
-      "num_curtida": 32,
+      "num_curtida": 33,
       "comentarios": [
         {
           "id": "1",
