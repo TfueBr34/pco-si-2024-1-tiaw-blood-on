@@ -46,5 +46,63 @@
       "username": "Pedro Costa",
       "url_pic": "Assets/foto_perfil.png"
     }
+  ],
+  "tipos_sangue":[
+    {
+      "id": "1",
+      "nome_tipo": "O+",
+      "id_categoria_qt": 1,
+      "data_att": "30/05/2024",
+      "dsc_categoria": "Agende a doação o quanto antes"
+    },
+    {
+      "id": "2",
+      "nome_tipo": "O-",
+      "id_categoria_qt": 2,
+      "data_att": "30/05/2024",
+      "dsc_categoria": "Agende a doação nesta semana"
+    },
+    {
+      "id": "3",
+      "nome_tipo": "A+",
+      "id_categoria_qt": 3,
+      "data_att": "30/05/2024",
+      "dsc_categoria": "Agende a doação na próxima semana"
+    },
+    {
+      "id": "4",
+      "nome_tipo": "A-",
+      "id_categoria_qt": 4,
+      "data_att": "30/05/2024",
+      "dsc_categoria": "Aguarde 10 dias para agendar a doação"
+    },
+    {
+      "id": "5",
+      "nome_tipo": "B+",
+      "id_categoria_qt": 1,
+      "data_att": "30/05/2024",
+      "dsc_categoria": "Agende a doação o quanto antes"
+    },
+    {
+      "id": "6",
+      "nome_tipo": "B-",
+      "id_categoria_qt": 1,
+      "data_att": "30/05/2024",
+      "dsc_categoria": "Agende a doação o quanto antes"
+    },
+    {
+      "id": "7",
+      "nome_tipo": "AB+",
+      "id_categoria_qt": 1,
+      "data_att": "30/05/2024",
+      "dsc_categoria": "Agende a doação o quanto antes"
+    },
+    {
+      "id": "8",
+      "nome_tipo": "AB-",
+      "id_categoria_qt": 1,
+      "data_att": "30/05/2024",
+      "dsc_categoria": "Agende a doação o quanto antes"
+    }
   ]
 }

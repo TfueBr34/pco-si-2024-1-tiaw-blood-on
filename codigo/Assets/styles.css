@@ -58,6 +58,33 @@ main{
     resize: none;
 }
 
+.info{
+    border: solid 5px rgb(149, 0, 0);
+    border-radius: 10px;
+    margin: 0px auto;
+}
+
+.medidor{
+    border-radius: 10px;
+    background-color: rgb(149, 0, 0);
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.title{
+    border-radius: 3px;
+    background-color: rgb(149, 0, 0);
+    color: white;
+    margin: 5px auto;
+    padding: 10px;
+}
+
+.blood{
+    width: 75%;
+    height: 65%;
+}
+
 /*CSS Footer*/
 footer{
     background-color: rgb(149, 0, 0);
