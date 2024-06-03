@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood-on</title>
+    <link rel="stylesheet" href="styles_agenda_busca.css"> <!--Lê arquivo de estilo-->
+</head>
+<body>  <!--Corpo da página-->
+    <header>    <!--Cabeçalho da página-->
+        <div class="logo">
+            <a href="index.html"> <!--Volta para a página inicial caso se clique na logo-->
+                <img src="logo_agenda_busca.PNG" alt="Blood-on Logo" id="logo"> <!--Carrega a logo da Empresa-->
+            </a>
+        </div>
+        <h1 class="cabecalho">Blood-on</h1>
+    </header>
+    <main>
+        <section class="agenda_dia">
+            <h2>Agenda do dia</h2> <!--Exibe data atual na página de busca-->
+            <p id="data_1">AAA</p>
+        </section>
+        <section class="busca_doador">
+            <input type="text" id="campo_pesquisa" placeholder="Nome do doador..."> <!--Mensagem que informa o usuário que precisa digitar um nome a ser buscado-->
+            <button id="botao_pesquisa">Buscar</button>
+            <p id="campo_vazio" style=" display: none;">Favor digitar um nome antes de clicar em buscar!</p>  <!-- Cria referência para verificar se campo de busca está vazio -->
+        </section>
+        <section class="sec_tab">
+            <table id="tab_exibe_consulta"><!--Constroi tabela para exibir resultados da busca -->
+                <thead>
+                    <tr>
+                        <th>NOME</th>
+                        <th>DATA DE NASCIMENTO</th>
+                        <th>NOME DA MAE</th>
+                        <th>DATA DO AGENDAMENTO</th>
+                    </tr>
+                </thead>
+                <tbody>                    
+                </tbody>
+            </table>
+        </section>
+        <button id="btn_imp">Imprimir ficha do doador</button> <!--Cria botão para imprimir dados do Doador-->
+    </main>
+    <footer>
+        <p>&copy; 2024 Blood-on. Todos os direitos reservados.</p> <!--Rodapé da página-->
+    </footer>
+    <script src="scripts_agenda_busca.js"></script> <!--Carrega arquivo javascript da página-->
+</body>
+</html>
