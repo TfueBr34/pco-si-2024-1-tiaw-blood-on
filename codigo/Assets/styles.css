@@ -6,7 +6,7 @@ body{
     font-weight:bold;
 }
 
-/*CSS Descrição*/
+/*CSS Painel Informativo*/
 #dialog{
     background-color: black;
     z-index: 10000;
@@ -28,10 +28,6 @@ body{
     border: solid 3px black;
     border-radius: 5px;
     padding: 5px;
-}
-
-.blood:hover{
-    box-shadow: 10px 5px 5px rgba(36, 36, 36, 0.5);
 }
 
 /*CSS Header*/
@@ -108,9 +104,27 @@ main{
     padding: 10px;
 }
 
+.title_2{
+    border-radius: 3px;
+    border: solid 5px rgb(149, 0, 0);
+    background-color: white;
+    color: rgb(149, 0, 0);
+    margin: 5px auto;
+    padding: 10px;
+    width: fit-content;
+}
+
 .blood{
     width: 75%;
     height: 65%;
+}
+
+.blood:hover{
+    box-shadow: 10px 5px 5px rgba(36, 36, 36, 0.5);
+}
+
+.subtitle{
+    color: rgb(149, 0, 0);
 }
 
 /*CSS Footer*/
