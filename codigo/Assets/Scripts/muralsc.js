@@ -41,7 +41,7 @@ function construir_topicos(){
                 <div id="${topicos[i].id}" class="topico container">
                     <div class="row">
                         <div class="col-1 text-end">
-                            <img src="${user[0].url_pic}" alt="foto de perfil">
+                            <img src="../Assets/Images/${user[0].url_pic}" alt="foto de perfil">
                         </div>
                         <div class="col-9 mt-1 text-start">
                             <h6>${user[0].username}</h6>
@@ -70,7 +70,7 @@ function construir_topicos(){
                 <div id="${topicos[i].id}" class="topico container">
                     <div class="row">
                         <div class="col-1 text-end">
-                            <img src="${user[0].url_pic}" alt="foto de perfil">
+                            <img src="../Assets/Images/${user[0].url_pic}" alt="foto de perfil">
                         </div>
                         <div class="col-11 mt-1 text-start">
                             <h6>${user[0].username}</h6>
@@ -190,7 +190,7 @@ async function construir_comentarios(){
         html_topico = `
         <div class="row">
             <div class="col-1 text-end">
-                <img src="${user[0].url_pic}" alt="foto de perfil">
+                <img src="../Assets/Images/${user[0].url_pic}" alt="foto de perfil">
             </div>
             <div class="col-9 mt-1 text-start">
                 <h6>${user[0].username}</h6>
@@ -217,7 +217,7 @@ async function construir_comentarios(){
         html_topico = `
         <div class="row">
             <div class="col-1 text-end">
-                <img src="${user[0].url_pic}" alt="foto de perfil">
+                <img src="../Assets/Images/${user[0].url_pic}" alt="foto de perfil">
             </div>
             <div class="col-11 mt-1 text-start">
                 <h6>${user[0].username}</h6>
@@ -250,7 +250,7 @@ async function construir_comentarios(){
             <div class="topico container">
                 <div class="row">
                     <div class="col-1 text-end">
-                        <img src="${user[0].url_pic}" alt="foto de perfil">
+                        <img src="../Assets/Images/${user[0].url_pic}" alt="foto de perfil">
                     </div>
                     <div class="col-9 mt-1 text-start">
                         <h6>${user[0].username}</h6>
@@ -279,7 +279,7 @@ async function construir_comentarios(){
             <div class="topico container">
                 <div class="row">
                     <div class="col-1 text-end">
-                        <img src="${user[0].url_pic}" alt="foto de perfil">
+                        <img src="../Assets/Images/${user[0].url_pic}" alt="foto de perfil">
                     </div>
                     <div class="col-11 mt-1 text-start">
                         <h6>${user[0].username}</h6>

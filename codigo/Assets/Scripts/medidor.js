@@ -13,7 +13,7 @@ async function set_medidores(){
     images = document.querySelectorAll(".blood");
     for(let i = 0; i < images.length; i++){
         let tipo_sangue = await get_info(url_sangue+"?id="+images[i].id);
-        images[i].src = "Assets/cat_"+tipo_sangue[0].id_categoria_qt+".png";
+        images[i].src = "../Assets/Images/cat_"+tipo_sangue[0].id_categoria_qt+".png";
     }
 }
 
