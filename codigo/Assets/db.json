@@ -16,7 +16,7 @@
           "id": "2",
           "user": 2,
           "texto": "Continue assim",
-          "num_curtida": 8
+          "num_curtida": 9
         }
       ]
     },
@@ -24,7 +24,7 @@
       "id": "2",
       "user": 2,
       "texto": "O centro de coleta de doações na minha cidade é muito precário.<br> Mais alguém com esse problema?",
-      "num_curtida": 33,
+      "num_curtida": 34,
       "comentarios": [
         {
           "id": "1",
@@ -39,15 +39,15 @@
     {
       "id": "1",
       "username": "João Afonso",
-      "url_pic": "Assets/foto_perfil.png"
+      "url_pic": "foto_perfil.png"
     },
     {
       "id": "2",
       "username": "Pedro Costa",
-      "url_pic": "Assets/foto_perfil.png"
+      "url_pic": "foto_perfil.png"
     }
   ],
-  "tipos_sangue":[
+  "tipos_sangue": [
     {
       "id": "1",
       "nome_tipo": "O+",
