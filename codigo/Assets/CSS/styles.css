@@ -46,6 +46,14 @@ header a{
     color: currentColor;
 }
 
+header button i{
+    color: white;
+}
+
+.dropdown{
+    display: inline;
+}
+
 /*CSS Main*/
 main{
     margin: 10px;

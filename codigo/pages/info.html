@@ -17,84 +17,93 @@
     <!--Header com a logo do site, nome e links de navegação-->
     <header class="container-fluid sticky-top">
         <div class="row align-items-center">
-            <div class="col-2 text-center">
+            <div class="col-lg-2 text-center">
                 <img src="../Assets/Images/logo.png" width="40%" height="71%" alt="Logo">
             </div>
-            <div class="col-8 text-center">
+            <div class="col-lg-8 text-center">
                 <h1>Blood-On</h1>
             </div>
-            <div class="col-2 text-end gx-5">
-                <a href="construção.html"><i class="fa-solid fa-user"></i></a>
+            <div class="col-lg-2 text-end gx-5">
+                <div class="dropdown">
+                    <button type="button" class="btn" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="mural.html">Mural</a></li>
+                        <li><a class="dropdown-item" href="construcao.html">Buscar Centros</a></li>
+                        <li><a class="dropdown-item" href="construcao.html">Sair da Conta</a></li>
+                    </ul>
+                </div>
+                <a href="construcao.html"><i class="fa-solid fa-user"></i></a>
                 <a href="../index.html"><i class="fa-solid fa-house"></i></a>
-                <a href="construção.html"><i class="fa-solid fa-bars"></i></a>
             </div>
         </div>
     </header>
     <!--Porção central do site com o menu de estoque de sangue e as informações sobre doação-->
     <main class="container-fluid">
         <div class="row">
-            <div class="col-2 text-center">
+            <div class="col-lg-2 text-center">
                 <!--Menu de estoque de sangue-->
                 <div class="medidor container-fluid">
                     <h5>Estoque de Sangue</h5>
                     <div class="row">
-                        <div class="col-6 text-center mb-4">
+                        <div class="col-lg-6 text-center mb-4">
                             <p>O+</p>
                             <img id="1" src="../Assets/Images/" class="blood">
                         </div>
-                        <div class="col-6 text-center mb-4">
+                        <div class="col-lg-6 text-center mb-4">
                             <p>O-</p>
                             <img id="2" src="../Assets/Images/" class="blood">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6 text-center mb-4">
+                        <div class="col-lg-6 text-center mb-4">
                             <p>A+</p>
                             <img id="3" src="../Assets/Images/" class="blood">
                         </div>
-                        <div class="col-6 text-center mb-4">
+                        <div class="col-lg-6 text-center mb-4">
                             <p>A-</p>
                             <img id="4" src="../Assets/Images/" class="blood">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6 text-center mb-4">
+                        <div class="col-lg-6 text-center mb-4">
                             <p>B+</p>
                             <img id="5" src="../Assets/Images/" class="blood">
                         </div>
-                        <div class="col-6 text-center mb-4">
+                        <div class="col-lg-6 text-center mb-4">
                             <p>B-</p>
                             <img id="6" src="../Assets/Images/" class="blood">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6 text-center mb-4">
+                        <div class="col-lg-6 text-center mb-4">
                             <p>AB+</p>
                             <img id="7" src="../Assets/Images/" class="blood">
                         </div>
-                        <div class="col-6 text-center mb-4">
+                        <div class="col-lg-6 text-center mb-4">
                             <p>AB-</p>
                             <img id="8" src="../Assets/Images/" class="blood">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-10">
+            <div class="col-lg-10">
                 <!--Seção com as informações sobre os requisitos para doar sangue e como funciona o processo de doação-->
                 <div class="container">
                     <div class="row title text-center mb-4">
                         <h3>Entenda mais sobre a doação de sangue</h3>
                     </div>
                     <div class="row text-center">
-                        <div class="col-5 title">
+                        <div class="col-lg-5 title">
                             <h3>Requisitos para doação</h3>
                         </div>
-                        <div class="col-5 title">
+                        <div class="col-lg-5 title">
                             <h3>Processo de Doação</h3>
                         </div>
                     </div>
                     <div class="row mt-4">
-                        <div class="col-5 info">
+                        <div class="col-lg-5 info">
                             <p><i class="fa-solid fa-arrow-right"></i> Idade: Para doar sangue, é necessário ter entre 16 e 69 anos. Menores de 18 anos precisam de autorização dos pais ou responsáveis legais.</p>
                             <p><i class="fa-solid fa-arrow-right"></i> Peso: O doador precisa pesar no mínimo 50 kg</p>
                             <p><i class="fa-solid fa-arrow-right"></i> Saúde geral: O doador precisa estar em boas condições de saúde, sem sintomas de gripe ou resfriado.</p>
@@ -105,7 +114,7 @@
 
                             <a href="https://www.hemominas.mg.gov.br/doacao-e-atendimento-ambulatorial/doacao-de-sangue/condicoes-e-restricoes">Saiba mais</a>
                         </div>
-                        <div class="col-5 info">
+                        <div class="col-lg-5 info">
                             <p><i class="fa-solid fa-arrow-right"></i> Registro e triagem: O doador preenche um formulário com informações pessoais e passa por uma triagem inicial para determinar elegibilidade.</p>
                             <p><i class="fa-solid fa-arrow-right"></i> Entrevista pré-doação: Um profissional de saúde realiza uma entrevista confidencial para avaliar a elegibilidade do doador com base em critérios médicos e de estilo de vida.</p>
                             <p><i class="fa-solid fa-arrow-right"></i> Exame físico: O doador passa por uma verificação de sinais vitais, incluindo pressão arterial, pulso e temperatura.</p>
@@ -124,12 +133,12 @@
     <!--Footer com as informações de copyright e contato do site-->
     <footer class="container-fluid">
         <div class="row">
-            <div class="col-6">
+            <div class="col-lg-6">
                 <p class="mt-4">
                     © 2024 - 2024 www.blood-on.com - All Rights Reserved.
                 </p>
             </div>
-            <div class="col-6 text-end mt-2">
+            <div class="col-lg-6 text-end mt-2">
                 <p>
                     Contato: Email@email.com
                     <br>

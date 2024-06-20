@@ -11,30 +11,84 @@
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!--Seção do site onde serão adicionados os painéis informativos via javascript-->
+    <div id="dialog" class="d-none">
+    </div>
     <!--Header com a logo do site, nome e links de navegação-->
     <header class="container-fluid sticky-top">
         <div class="row align-items-center">
-            <div class="col-2 text-center">
+            <div class="col-lg-2 text-center">
                 <img src="../Assets/Images/logo.png" width="40%" height="71%" alt="Logo">
             </div>
-            <div class="col-8 text-center">
+            <div class="col-lg-8 text-center">
                 <h1>Blood-On</h1>
             </div>
-            <div class="col-2 text-end gx-5">
-                <a href="construção.html"><i class="fa-solid fa-user"></i></a>
+            <div class="col-lg-2 text-end gx-5">
+                <div class="dropdown">
+                    <button type="button" class="btn" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="construcao.html">Buscar Centros</a></li>
+                        <li><a class="dropdown-item" href="info.html">Informe-se</a></li>
+                        <li><a class="dropdown-item" href="construcao.html">Sair da Conta</a></li>
+                    </ul>
+                </div>
+                <a href="construcao.html"><i class="fa-solid fa-user"></i></a>
                 <a href="../index.html"><i class="fa-solid fa-house"></i></a>
-                <a href="construção.html"><i class="fa-solid fa-bars"></i></a>
             </div>
         </div>
     </header>
     <!--Porção central do site com os tópicos sendo preenchidos dinamicamente pelo javascript-->
     <main class="container-fluid">
         <div class="row">
-            <div class="col-2 text-center">
-                <!--Imagem sendo utilizada de placeholder para um artefato que será feito futuramente-->
-                <img src="../Assets/Images/menu-medidor.png" alt="Medidor de Sangue" width="80%" height="85%">
+            <div class="col-lg-2 text-center">
+                <!--Menu de estoque de sangue-->
+                <div class="medidor container-fluid">
+                    <h5>Estoque de Sangue</h5>
+                    <div class="row">
+                        <div class="col-lg-6 text-center mb-4">
+                            <p>O+</p>
+                            <img id="1" src="../Assets/Images/" class="blood">
+                        </div>
+                        <div class="col-lg-6 text-center mb-4">
+                            <p>O-</p>
+                            <img id="2" src="../Assets/Images/" class="blood">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 text-center mb-4">
+                            <p>A+</p>
+                            <img id="3" src="../Assets/Images/" class="blood">
+                        </div>
+                        <div class="col-lg-6 text-center mb-4">
+                            <p>A-</p>
+                            <img id="4" src="../Assets/Images/" class="blood">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 text-center mb-4">
+                            <p>B+</p>
+                            <img id="5" src="../Assets/Images/" class="blood">
+                        </div>
+                        <div class="col-lg-6 text-center mb-4">
+                            <p>B-</p>
+                            <img id="6" src="../Assets/Images/" class="blood">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 text-center mb-4">
+                            <p>AB+</p>
+                            <img id="7" src="../Assets/Images/" class="blood">
+                        </div>
+                        <div class="col-lg-6 text-center mb-4">
+                            <p>AB-</p>
+                            <img id="8" src="../Assets/Images/" class="blood">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-10">
+            <div class="col-lg-10">
                 <div id="form_post" class="text-start">
                     <!--Form de postagem do tópico-->
                     <form action="submit">
@@ -53,12 +107,12 @@
     <!--Footer com as informações de copyright e contato do site-->
     <footer class="container-fluid">
         <div class="row">
-            <div class="col-6">
+            <div class="col-lg-6">
                 <p class="mt-4">
                     © 2024 - 2024 www.blood-on.com - All Rights Reserved.
                 </p>
             </div>
-            <div class="col-6 text-end mt-2">
+            <div class="col-lg-6 text-end mt-2">
                 <p>
                     Contato: Email@email.com
                     <br>
@@ -69,5 +123,6 @@
     </footer>
     <!--Adiciona o script do javascript no site-->
     <script src="../Assets/Scripts/muralsc.js"></script>
+    <script src="../Assets/Scripts/medidor.js"></script>
 </body>
 </html>
