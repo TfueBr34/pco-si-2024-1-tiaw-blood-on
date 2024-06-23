@@ -20,10 +20,10 @@
             <div class="col-md-2 text-center">
                 <img src="Assets/Images/logo.png" width="40%" height="71%" alt="Logo">
             </div>
-            <div class="col-md-8 text-center">
+            <div id="name" class="col-md-5 text-end">
                 <h1>Blood-On</h1>
             </div>
-            <div class="col-md-2 text-end gx-5">
+            <div id="menu_logado" class="col-md-2 text-end gx-5">
                 <div class="dropdown">
                     <button type="button" class="btn" data-bs-toggle="dropdown">
                         <i class="fa-solid fa-bars"></i>
@@ -37,8 +37,33 @@
                 </div>
                 <a href="pages/construcao.html"><i class="fa-solid fa-user"></i></a>
             </div>
+            <div id="menu_deslogado" class="col-md-5 text-center gx-5">
+                <a href="pages/construcao.html" class="btn mx-2 log_item" role="button">Login</a>
+                <a href="pages/construcao.html" class="btn mx-2 log_item" role="button">Cadastrar Usuário <br> (Doador)</a>
+                <a href="pages/construcao.html" class="btn mx-2 log_item" role="button">Cadastrar Usuário <br> (Centro)</a>
+            </div>
         </div>
     </header>
+    
+    <script type="text/javascript">
+        let usuario = sessionStorage.getItem("usuario");
+    
+        if(usuario == null){
+            document.getElementById("menu_logado").classList.add("d-none")
+            document.getElementById("menu_deslogado").classList.remove("d-none")
+            document.getElementById("name").classList.remove("col-md-8")
+            document.getElementById("name").classList.remove("text-center")
+            document.getElementById("name").classList.add("col-md-5")
+            document.getElementById("name").classList.add("text-end")
+        }else{
+            document.getElementById("menu_logado").classList.remove("d-none")
+            document.getElementById("menu_deslogado").classList.add("d-none")
+            document.getElementById("name").classList.remove("col-md-5")
+            document.getElementById("name").classList.remove("text-end")
+            document.getElementById("name").classList.add("col-md-8")
+            document.getElementById("name").classList.add("text-center")
+        }
+    </script>
     <!--Porção central do site com uma apresentação do site e o menu de estoque de sangue-->
     <main class="container-fluid">
         <div class="row title text-center mb-4 mx-1">
