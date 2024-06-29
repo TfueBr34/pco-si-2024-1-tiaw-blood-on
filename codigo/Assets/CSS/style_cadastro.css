@@ -11,6 +11,16 @@ body {
     justify-content: center;
 }
 
+.retorno{
+    text-decoration: none;
+    color: white;
+}
+
+.retorno:hover{
+    text-decoration: none;
+    color: white;
+}
+
 .left-section {
     text-align: center;
 }
