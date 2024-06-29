@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood-on</title>
+    <link rel="stylesheet" href="/codigo/assets/CSS/styles_perfil_empresa.css"> <!--Lê arquivo de estilo-->
+</head>
+<body>  <!--Corpo da página-->
+    <header>    <!--Cabeçalho da página-->
+        <div class="logo">
+            <a href="/codigo/index.html"> <!--Volta para a página inicial caso se clique na logo-->
+                <img src="/codigo/assets/images/logo_agenda_busca.PNG" alt="Blood-on Logo" id="logo"> <!--Carrega a logo da Empresa-->
+            </a>
+        </div>
+        <h1 class="cabecalho">Blood-on</h1>
+    </header>
+    <main>
+        <div class="container">
+            <section class="sec_tab1">
+                <div class="empresa-foto">
+                    <img src="/codigo/assets/images/foto_empresa.jpg" alt="Foto da Empresa" id="foto-empresa"> <!-- Foto da empresa -->
+                    <input type="file" id="foto-input" style="display:none;"> <!-- Campo de edição da foto -->
+                </div>
+                <div class="empresa-nome">
+                    EMPRESA TESTE <!-- Nome da empresa -->
+                </div>
+                <div class="empresa-info">
+                    <p></p>
+                    <p></p>
+                    Informações de Contato
+                    <p id="nome">Nome</p> <!-- Informação da empresa 1 -->
+                    <input type="text" id="nome-input" value="Nome" style="display:none;"> <!-- Campo de edição do nome -->
+                    <p id="telefone">Telefone</p> <!-- Informação da empresa 2 -->
+                    <input type="text" id="telefone-input" value="Telefone" style="display:none;"> <!-- Campo de edição do telefone -->
+                    <p id="email">Email</p> <!-- Informação da empresa 3 -->
+                    <input type="text" id="email-input" value="Email" style="display:none;"> <!-- Campo de edição do email -->
+                    <div class="botao-container">
+                        <button id="editar-info" class="editar-botao">Editar</button> <!-- Botão para editar -->
+                        <button id="salvar-info" class="editar-botao" style="display:none;">Salvar</button> <!-- Botão para salvar -->
+                    </div>
+                </div>
+            </section>        
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Blood-on. Todos os direitos reservados.</p> <!--Rodapé da página-->
+    </footer>
+    <script src="/codigo/assets/Scripts/scripts_feed_back_centro_coleta.js"></script> <!--Carrega arquivo javascript da página-->
+    <script src="/codigo/assets/Scripts/editar_empresa.js"></script> <!--Carrega o arquivo JavaScript de edição-->
+</body>
+</html>

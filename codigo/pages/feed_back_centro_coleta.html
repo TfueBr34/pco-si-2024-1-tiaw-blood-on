@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood-on</title>
+    <link rel="stylesheet" href="/codigo/assets/CSS/styles_feed_back_centro_coleta.css"> <!--Lê arquivo de estilo-->
+</head>
+<body>  <!--Corpo da página-->
+    <header>    <!--Cabeçalho da página-->
+        <div class="logo">
+            <a href="/codigo/index.html"> <!--Volta para a página inicial caso se clique na logo-->
+                <img src="/codigo/assets/images/logo_agenda_busca.PNG" alt="Blood-on Logo" id="logo"> <!--Carrega a logo da Empresa-->
+            </a>
+        </div>
+        <h1 class="cabecalho">Blood-on</h1>
+    </header>
+    <main>
+        <div class="container">
+            <section class="sec_tab1">
+                <div class="empresa-foto">
+                    <img src="/codigo/assets/images/foto_empresa.jpg" alt="Foto da Empresa"> <!-- Foto da empresa -->
+                </div>
+                <div class="empresa-nome">
+                    EMPRESA TESTE <!-- Nome da empresa -->
+                </div>
+                <div class="empresa-info">
+                    <p></p>
+                    <p></p>
+                     Informações de Contato
+                    <p>Nome</p> <!-- Informação da empresa 1 -->
+                    <p>Telefone</p> <!-- Informação da empresa 2 -->
+                    <p>Email</p> <!-- Informação da empresa 3 -->
+                </div>
+            </section>        
+            <section class="sec_tab2">
+                <h2>AVALIAÇÃO:</h2>
+                
+                <div class="deixe-sua-avaliacao">
+                    <label for="comentario">Deixe sua avaliação...</label>
+                    <div class="rating">
+                        <span class="star" data-value="1">☆</span>
+                        <span class="star" data-value="2">☆</span>
+                        <span class="star" data-value="3">☆</span>
+                        <span class="star" data-value="4">☆</span>
+                        <span class="star" data-value="5">☆</span>
+                        
+                    </div>
+                    <textarea id="comentario" rows="4" cols="50"></textarea>
+                    <button onclick="submitReview()">Enviar</button>
+                </div>
+                <div class="comentarios" id="comentarios">
+                    <!-- Comentários serão exibidos aqui -->
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Blood-on. Todos os direitos reservados.</p> <!--Rodapé da página-->
+    </footer>
+    <script src="/codigo/assets/Scripts/scripts_feed_back_centro_coleta.js"></script> <!--Carrega arquivo javascript da página-->
+</body>
+</html>
