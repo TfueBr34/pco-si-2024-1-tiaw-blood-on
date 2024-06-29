@@ -39,12 +39,38 @@
     {
       "id": "1",
       "username": "João Afonso",
+      "email": "email1@gmail.com",
+      "senha": "senhasenha.1!",
+      "bairro": "eldorado",
+      "cidade": "contagem",
+      "dt_nasc": "2000-05-10",
+      "telefone": "31975352142",
+      "sexo": "1",
       "url_pic": "foto_perfil.png"
     },
     {
       "id": "2",
       "username": "Pedro Costa",
+      "email": "email2@gmail.com",
+      "senha": "Tteste,.1!",
+      "bairro": "savassi",
+      "cidade": "belo horizonte",
+      "dt_nasc": "1993-12-03",
+      "telefone": "31915450112",
+      "sexo": "1",
       "url_pic": "foto_perfil.png"
+    },
+    {
+      "id": "3",
+      "username": "Samuel Vital Santos Silva",
+      "email": "samvit190@gmail.com",
+      "senha": "1aBoasenha!",
+      "bairro": "cabral",
+      "cidade": "contagem",
+      "dt_nasc": "2003-08-19",
+      "telefone": "31983312890",
+      "sexo": "1",
+      "url_pic": ""
     }
   ],
   "tipos_sangue": [
