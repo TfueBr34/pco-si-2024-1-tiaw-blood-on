@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Adiciona os arquivos do bootstrap, css e dos ícones ao html-->
-    <link rel="stylesheet" href="Assets/CSS/styles.css">
+    <link rel="stylesheet" href="Assets/CSS/style_principal.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/7c6578f770.js" crossorigin="anonymous"></script>
     <title>Blood-On</title>
@@ -17,25 +17,56 @@
     <!--Header com a logo do site, nome e links de navegação-->
     <header class="container-fluid sticky-top">
         <div class="row align-items-center">
-            <div class="col-2 text-center">
+            <div class="col-md-2 text-center">
                 <img src="Assets/Images/logo.png" width="40%" height="71%" alt="Logo">
             </div>
-            <div class="col-8 text-center">
+            <div id="name" class="text-center text-md-end">
                 <h1>Blood-On</h1>
             </div>
-            <div class="col-2 text-end gx-5">
-                <a href="pages/construção.html"><i class="fa-solid fa-user"></i></a>
-                <a href="pages/info.html"><i class="fa-solid fa-bars"></i></a>
+            <div id="menu_logado" class="col-md-2 text-end gx-5">
+                <div class="dropdown">
+                    <button type="button" class="btn" data-bs-toggle="dropdown">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="pages/mural.html">Mural</a></li>
+                        <li><a class="dropdown-item" href="pages/construcao.html">Buscar Centros</a></li>
+                        <li><a class="dropdown-item" href="pages/info.html">Informe-se</a></li>
+                        <li><a class="dropdown-item" href="pages/construcao.html">Sair da Conta</a></li>
+                    </ul>
+                </div>
+                <a href="pages/construcao.html"><i class="fa-solid fa-user"></i></a>
+            </div>
+            <div id="menu_deslogado" class="col-md-5 text-center gx-5">
+                <a href="pages/construcao.html" class="btn mx-1 log_item" role="button">Login</a>
+                <a href="pages/cadastro_doador.html" class="btn mx-1 log_item" role="button">Cadastrar Usuário <br> (Doador)</a>
+                <a href="pages/construcao.html" class="btn mx-1 log_item" role="button">Cadastrar Usuário <br> (Centro)</a>
             </div>
         </div>
     </header>
+    
+    <script type="text/javascript">
+        let usuario = sessionStorage.getItem("usuario");
+    
+        if(usuario == null){
+            document.getElementById("menu_logado").classList.add("d-none");
+            document.getElementById("menu_deslogado").classList.remove("d-none");
+            document.getElementById("name").classList.add("col-md-4");
+        }else{
+            document.getElementById("menu_logado").classList.remove("d-none");
+            document.getElementById("menu_deslogado").classList.add("d-none");
+            document.getElementById("name").classList.remove("text-end");
+            document.getElementById("name").classList.add("col-md-8");
+            document.getElementById("name").classList.add("text-center");
+        }
+    </script>
     <!--Porção central do site com uma apresentação do site e o menu de estoque de sangue-->
     <main class="container-fluid">
         <div class="row title text-center mb-4 mx-1">
             <h3>SOLIDARIEDADE E INOVAÇÃO NA VEIA - UMA TRANSFUSÃO DE AMOR</h3>
         </div>
         <div class="row">
-            <div class="col-6 text-center">
+            <div class="col-sm-12 col-lg-6 text-center">
                 <div class="subtitle mb-4">
                     <h3>Sejam bem vindos!</h3>
                 </div>
@@ -47,7 +78,7 @@
                     <p class="text-dark"><i class="fa-solid fa-arrow-right text-danger"></i> O projeto Blood-On foi desenvolvido por uma equipe composta de estudantes da PUC Minas e objetiva criar um site que facilite o processo de doação de sangue tanto para os doadores quanto para os receptores. Para mais informações com relação ao contato com os desenvolvedores, verifique o rodapé da página</p>
                 </div>
             </div>
-            <div class="col-5 text-center mt-5 mx-5">
+            <div class="col-sm-12 col-lg-4 col-xl-5 text-center mx-lg-5">
                 <!--Menu de estoque de sangue-->
                 <div class="medidor container-fluid">
                     <h5>Estoque de Sangue</h5>
@@ -93,20 +124,13 @@
     </main>
 
     <!--Footer com as informações de copyright e contato do site-->
-    <footer class="container-fluid">
+    <footer class="container-fluid fixed-bottom">
         <div class="row">
-            <div class="col-6">
-                <p class="mt-4">
-                    © 2024 - 2024 www.blood-on.com - All Rights Reserved.
-                </p>
-            </div>
-            <div class="col-6 text-end mt-2">
-                <p>
-                    Contato: Email@email.com
-                    <br>
-                    Equipe Blood-On
-                </p>
-            </div>
+            <p class="mt-4">
+                © 2024 - 2024 www.blood-on.com - All Rights Reserved.
+                <br>
+                Contato: Email@email.com - Equipe Blood-On
+            </p>
         </div>
     </footer>
     <!--Adiciona o script do javascript no site-->

@@ -1,0 +1,162 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(149, 0, 0);
+    color: white;
+    padding: 5px;
+}
+
+header  i {
+    margin-right: 5px;
+}
+
+header a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+header button i{
+    color: white;
+}
+
+.dropdown{
+    display: inline;
+}
+.cabecalho {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 30px; 
+}
+
+.logo img {   
+    width: 100px;
+    vertical-align: middle;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.agenda_dia h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.agenda_dia p {
+    font-size: 1.2em;
+    text-align: center;
+    color: gray;
+}
+
+.busca_doador {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.busca_doador input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    width: 70%;
+}
+
+.busca_doador button {
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    background-color: rgb(149, 0, 0);
+    color: white;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.busca_doador button:hover {
+    background-color: rgb(149, 0, 0);
+}
+
+.sec_tab {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 10px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+button#btn_imp {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(149, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button#btn_imp:hover {
+    background-color: rgb(149, 0, 0);
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(149, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+@media (max-width: 600px) {
+    .busca_doador {
+        flex-direction: column;
+    }
+
+    .busca_doador input {
+        width: 100%;
+        border-radius: 4px 4px 0 0;
+    }
+
+    .busca_doador button {
+        width: 100%;
+        border-radius: 0 0 4px 4px;
+    }
+}

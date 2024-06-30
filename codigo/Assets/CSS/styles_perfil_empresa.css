@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(149, 0, 0);
+    color: white;
+    padding: 5px;
+}
+
+header  i {
+    margin-right: 5px;
+}
+
+header a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+header button i{
+    color: white;
+}
+
+.dropdown{
+    display: inline;
+}
+
+.cabecalho {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0; 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 30px; 
+}
+
+.logo img {   
+    width: 100px;
+    vertical-align: middle;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    max-width: 900px;
+    background: rgb(149, 0, 0);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Estilos para as seções lado a lado */
+.container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 300px; /* Define uma altura mínima */
+}
+
+.sec_tab1, .sec_tab2 {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Ajusta a largura das seções se necessário */
+.sec_tab1 {
+    margin-right: 10px;
+}
+
+.sec_tab2 {
+    margin-left: 10px;
+}
+
+.empresa-foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.empresa-nome {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.empresa-info p {
+    background-color: #eaeaea;
+    
+    margin: 10px 0;
+    border-radius: 4px;
+    text-align: left;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(149, 0, 0);;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.botao-container {
+    display: flex; /* Utiliza o layout flexível */
+    justify-content: right; /* Alinhar à direita horizontalmente */
+    margin-top: 20px; /* Espaçamento superior, ajustável conforme necessário */
+}
+
+.editar-botao {
+    background-color: rgb(149, 0, 0); /* Cor de fundo verde */
+    color: white; /* Cor do texto branca */
+    padding: 10px 20px; /* Espaçamento interno */
+    margin-top: 10px; /* Espaçamento superior */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mãozinha */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+.editar-botao:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
