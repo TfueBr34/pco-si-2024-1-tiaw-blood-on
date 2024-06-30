@@ -8,6 +8,16 @@ body {
     height: 100vh;
 }
 
+.retorno{
+    text-decoration: none;
+    color: white;
+}
+
+.retorno:hover{
+    text-decoration: none;
+    color: white;
+}
+
 .login-container {
     display: flex;
     justify-content: center;

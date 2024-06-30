@@ -1,15 +1,30 @@
+const url_usuario = "http://localhost:3000/usuarios";
+
+//Função de coleta de informações do JSON Server dado o id do elemento
+async function get_info(url) {
+    const res = await fetch(url);
+  
+    return res.json();
+}
+
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
+    document.getElementById('loginForm').addEventListener('submit', async function(event) {
         event.preventDefault();
 
-        const razaoSocial = document.getElementById('login').value;
+        const email = document.getElementById('email').value.toLowerCase();
         const senha = document.getElementById('senha').value;
 
-        const users = JSON.parse(localStorage.getItem('users')) || [];
+        let users = await get_info(url_usuario);
+        let usuario = null;
 
-        const user = users.find(user => user.razaoSocial === razaoSocial && user.senha === senha);
+        users.forEach(user => {
+            if(user.email == email && user.senha === senha){
+                usuario = user;
+            }
+        });
 
-        if (user) {
+        if (usuario != null) {
+            sessionStorage.setItem("usuario",JSON.stringify(usuario));
             // Redirecionando para a página de teste após a validação bem-sucedida
             window.location.href = '../index.html';
         } else {
