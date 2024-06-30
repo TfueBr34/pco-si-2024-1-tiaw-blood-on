@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> <!-- Define o idioma da página para Português -->
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a escala da página para dispositivos móveis -->
+    <title>Blood-On</title> <!-- Título da página que aparece na aba do navegador -->
+    <link rel="stylesheet" href="../Assets/CSS/style_busca.css"> <!-- Link para o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Link para os ícones da Font Awesome -->
+</head>
+<body>
+    <header class="header"> <!-- Cabeçalho da página -->
+        <div class="imagemLogo">
+            <img src="../Assets/Images/logo.png" alt="Logo"> <!-- Logotipo da página -->
+        </div>
+        <h1>Blood-On</h1> <!-- Título principal da página -->
+        <div class="icons">
+            <a href="pagina2.html">
+                <i class="fa-solid fa-user" style="color: #74C0FC;" aria-label="User"></i> <!-- Ícone de usuário -->
+            </a>
+            <a href="pagina2.html">
+                <i class="fa-solid fa-house" style="color: #fafafa;" aria-label="Home"></i> <!-- Ícone de casa (Home) -->
+            </a>
+            <a href="pagina2.html">
+                <i class="fa-solid fa-bars" style="color: #f7f7f8;" aria-label="Menu"></i> <!-- Ícone de menu -->
+            </a>
+        </div>
+    </header>
+
+    <div class="container"> <!-- Container principal da página -->
+        <aside class="sidebar"> <!-- Barra lateral -->
+            <h2>Estoque de Sangue</h2> <!-- Título da barra lateral -->
+            <ul class="blood-status">
+                <!-- Lista para exibir o status do estoque de sangue -->
+            </ul>
+        </aside>
+
+        <div class="main-content"> <!-- Conteúdo principal da página -->
+            <div class="search-wrapper">
+                <div class="search-bar">
+                    <input type="text" id="city-input" placeholder="Digite a cidade para doar..." required> <!-- Campo de input para pesquisar por cidade -->
+                    <button onclick="searchHemocenters()">Pesquisar</button> <!-- Botão para iniciar a pesquisa -->
+                </div>
+            </div>
+            <div id="results" class="results"></div> <!-- Div para exibir os resultados da pesquisa -->
+        </div>
+    </div>
+
+    <footer class="footer"> <!-- Rodapé da página -->
+        <p>2024 | Blood-On. Todos os direitos reservados</p> <!-- Texto do rodapé -->
+    </footer>
+
+    <script src="../Assets/Scripts/busca_centro.js"></script> <!-- Link para o arquivo de script JavaScript -->
+</body>
+</html>
