@@ -155,7 +155,12 @@ main{
 }
 /*CSS Footer*/
 footer{
-    background-color: rgb(149, 0, 0);
+    width: 100%;
+    background-color: #800000;
     color: white;
-    padding: 1px;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
