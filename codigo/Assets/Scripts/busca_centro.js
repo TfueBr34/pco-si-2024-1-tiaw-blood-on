@@ -1,3 +1,5 @@
+const url_centros= "http://localhost:3000/pontosDoacao";
+
 function searchHemocenters() {
     const city = document.getElementById('city-input').value.trim(); 
     const resultsDiv = document.getElementById('results');
@@ -14,10 +16,10 @@ function searchHemocenters() {
     }
 
 
-    fetch('../Assets/hemocenters.json')
+    fetch(url_centros)
         .then(response => response.json()) 
         .then(data => {
-            const pontosDoacao = data.pontosDoacao;
+            const pontosDoacao = data;
             // Filtra os hemocentros que correspondem à cidade digitada ignoando letras maiusculas minusculas
             const filteredHemocenters = pontosDoacao.filter(hc => hc.cidade.toLowerCase().includes(city.toLowerCase()));
 

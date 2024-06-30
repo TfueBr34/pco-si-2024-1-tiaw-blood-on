@@ -46,7 +46,15 @@
       "dt_nasc": "2000-05-10",
       "telefone": "31975352142",
       "sexo": "1",
-      "url_pic": "foto_perfil.png"
+      "url_pic": "foto_perfil.png",
+      "requisitos": {
+        "peso": true,
+        "idade": true,
+        "viagem": true,
+        "ist": false,
+        "hep/hiv": true,
+        "doenca": true
+      }
     },
     {
       "id": "2",
@@ -58,7 +66,15 @@
       "dt_nasc": "1993-12-03",
       "telefone": "31915450112",
       "sexo": "1",
-      "url_pic": "foto_perfil.png"
+      "url_pic": "foto_perfil.png",
+      "requisitos": {
+        "peso": true,
+        "idade": true,
+        "viagem": false,
+        "ist": true,
+        "hep/hiv": false,
+        "doenca": true
+      }
     },
     {
       "id": "3",
@@ -70,7 +86,61 @@
       "dt_nasc": "2003-08-19",
       "telefone": "31983312890",
       "sexo": "1",
-      "url_pic": ""
+      "url_pic": "",
+      "requisitos": {
+        "peso": true,
+        "idade": true,
+        "viagem": true,
+        "ist": true,
+        "hep/hiv": true,
+        "doenca": true
+      }
+    }
+  ],
+  "pontosDoacao": [
+    {
+      "id": "1",
+      "razaoSocial": "Hemocentro de Belo Horizonte",
+      "email": "hemobh@gmail.com",
+      "senha": "hemobh123",
+      "logradouro": "Rua Alameda Ezequiel Dias, 321",
+      "bairro": "Santa Efigênia",
+      "cidade": "Belo Horizonte",
+      "telefone": "(31)1234-5678",
+      "image": "../Assets/Images/beloHorizonte.png"
+    },
+    {
+      "id": "2",
+      "razaoSocial": "Hermes Pardini de Contagem",
+      "email": "hermespardini@gmail.com",
+      "senha": "pardini123",
+      "logradouro": "Avenida João César de Oliveira, 500",
+      "bairro": "Eldorado",
+      "cidade": "Contagem",
+      "telefone": "(31)9876-5432",
+      "image": "../Assets/Images/contagem.png"
+    },
+    {
+      "id": "3",
+      "razaoSocial": "Posto de Coleta Betim",
+      "email": "postobetim@gmail.com",
+      "senha": "betim123",
+      "logradouro": "Rua Padre Osório Braga, 45",
+      "bairro": "Centro",
+      "cidade": "Betim",
+      "telefone": "(31)5643-2198",
+      "image": "../Assets/Images/betim.png"
+    },
+    {
+      "id": "4",
+      "razaoSocial": "São Marcos Santa Luzia",
+      "email": "saomarcos@gmail.com",
+      "senha": "marcos123",
+      "logradouro": "Rua do Comércio, 123",
+      "bairro": "São Benedito",
+      "cidade": "Santa Luzia",
+      "telefone": "(31)4321-8765",
+      "image": "../Assets/Images/santaLuzia.png"
     }
   ],
   "tipos_sangue": [

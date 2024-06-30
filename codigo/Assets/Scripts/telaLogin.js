@@ -1,4 +1,5 @@
 const url_usuario = "http://localhost:3000/usuarios";
+const url_centros= "http://localhost:3000/pontosDoacao";
 
 //Função de coleta de informações do JSON Server dado o id do elemento
 async function get_info(url) {
@@ -23,6 +24,13 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
+        users = await get_info(url_centros);
+        users.forEach(user => {
+            if(user.email == email && user.senha === senha){
+                usuario = user;
+            }
+        });
+        
         if (usuario != null) {
             sessionStorage.setItem("usuario",JSON.stringify(usuario));
             // Redirecionando para a página de teste após a validação bem-sucedida
