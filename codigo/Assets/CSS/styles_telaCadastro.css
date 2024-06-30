@@ -1,0 +1,51 @@
+body {
+    background-color: #920707;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container-fluid {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-section {
+    text-align: center;
+}
+
+.formulario{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.textoLateral {
+    padding: 20px;
+    border-left: 1px solid white;
+}
+
+.btn-register {
+    background-color: #8B0000;
+    color: white;
+}
+
+.btn-register:hover {
+    background-color: #a94442;
+}
+
+.left-section img {
+    width: 150px;
+    height: 150px;
+}
+
+.form-group.row {
+    margin-bottom: 10px;
+}
+
+.bold-text {
+    font-weight: 900;
+}
