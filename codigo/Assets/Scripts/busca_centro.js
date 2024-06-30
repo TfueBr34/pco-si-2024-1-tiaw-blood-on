@@ -19,33 +19,35 @@ function searchHemocenters() {
     fetch(url_centros)
         .then(response => response.json()) 
         .then(data => {
-            const pontosDoacao = data;
+            let pontosDoacao = data;
             // Filtra os hemocentros que correspondem à cidade digitada ignoando letras maiusculas minusculas
-            const filteredHemocenters = pontosDoacao.filter(hc => hc.cidade.toLowerCase().includes(city.toLowerCase()));
+            let filteredHemocenters = pontosDoacao.filter(hc => hc.cidade.toLowerCase().includes(city.toLowerCase()));
 
             // Verifica se há hemocentros correspondentes
             if (filteredHemocenters.length > 0) {
         
                 filteredHemocenters.forEach(hc => {
-                    const hemocenterDiv = document.createElement('div');
+                    let hemocenterDiv = document.createElement('div');
                     hemocenterDiv.classList.add('hemocenter');
-                    const img = document.createElement('img');
+                    let img = document.createElement('img');
                     img.src = hc.image || 'default-image.png'; 
                     img.alt = hc.razaoSocial;
 
-                
-                    const h2 = document.createElement('h2');
+                    let link = document.createElement('a');
+                    link.href = `perfil_empresa.html?id=${hc.id}`;
+                    let h2 = document.createElement('h2');
                     h2.textContent = hc.razaoSocial;
+                    link.append(h2);
 
-                    const p1 = document.createElement('p');
+                    let p1 = document.createElement('p');
                     p1.textContent = `Endereço: ${hc.logradouro}, ${hc.bairro}`;
 
-                    const p2 = document.createElement('p');
+                    let p2 = document.createElement('p');
                     p2.textContent = `Telefone: ${hc.telefone}`;
 
                     // Adiciona a imagem o nome o endereço e o telefone ao contêiner do hemocentro
                     hemocenterDiv.appendChild(img);
-                    hemocenterDiv.appendChild(h2);
+                    hemocenterDiv.appendChild(link);
                     hemocenterDiv.appendChild(p1);
                     hemocenterDiv.appendChild(p2);
 
@@ -53,7 +55,7 @@ function searchHemocenters() {
                 });
             } else {
                 // Se nenhum hemocentro for encontrado, exibe uma mensagem informando
-                const noResults = document.createElement('p');
+                let noResults = document.createElement('p');
                 noResults.textContent = 'Nenhum hemocentro encontrado para a cidade digitada.';
                 resultsDiv.appendChild(noResults);
             }
