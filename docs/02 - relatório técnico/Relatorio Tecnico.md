@@ -136,44 +136,27 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-
-|RF-001| Cadastro de Usuários: Permitir que os usuários (tanto doadores quanto receptores) se cadastrem no site fornecendo informações básicas, como nome, idade, tipo sanguíneo, e-mail e localização. | ALTO | 
-
-|RF-002| Busca de Bancos de Sangue: Implementar uma função de busca que permita aos usuários encontrar bancos de sangue próximos com base na pesquisa feita pelo usuário.   | ALTO |
-
-|RF-003| Visualizar perfil do banco de sangue: Permite o usuário visualizar o banco de sangue e suas informações de contato       | ALTO |
-
-|RF-004| Perfil do Doador/Receptor: Criar perfis personalizados para os doadores e receptores, onde possam visualizar suas informações e editá-las.   | MÉDIO |
-
+|RF-001| Cadastro de Usuários: Permitir que os usuários (tanto doadores quanto receptores) se cadastrem no site fornecendo informações básicas, como nome, idade, tipo sanguíneo, e-mail e localização | ALTO | 
+|RF-002| Busca de Bancos de Sangue: Implementar uma função de busca que permita aos usuários encontrar bancos de sangue próximos com base na pesquisa feita pelo usuário  | ALTO |
+|RF-003| Visualizar perfil do banco de sangue: Permite o usuário visualizar o banco de sangue e suas informações de contato | ALTO |
+|RF-004| Perfil do Doador/Receptor: Criar perfis personalizados para os doadores e receptores, onde possam visualizar suas informações e editá-las   | MÉDIO |
 |RF-005| Feedback e Avaliações: Permitir que os usuários avaliem e forneçam feedback sobre suas experiências com os bancos de sangue, ajudando a manter a qualidade dos serviços.   | MÉDIO |
-
 |RF-006| Compatibilidade com Dispositivos Móveis: Garantir que o site seja responsivo e compatível com dispositivos móveis, facilitando o acesso e uso pelos usuários em smartphones e tablets.   | ALTO |
-
 |RF-007| Notificações: Enviar lembretes automáticos aos usuários cadastrados sobre  estados críticos de determinados tipos sanguíneos | BAIXO |
-
 |RF-008|  Criação de tópicos no mural: Permite o usuário criar tópicos e comentar a respeito da doação podendo haver comentarios d outros usuário no mesmo tópico    | MÉDIO  |
-
 |RF-009| Acesso a sites externos: o site deve possuir um link que leva o usuário ao portal explicando mais detalhadamente sobre o processo de doação  | MÉDIO |
-
 |RF-010|  Compartilhamento e curtida no mural: Permite o usuário curtir e fazer o compartilhamento de tópicos e comentários        | MÉDIO |
-
 |RF-011|  Entrar em perfil já criado: Permite o usuário entrar em seu perfil no site  | ALTO |
-
 |RF-012|  Sair da conta : Permite o usuário deslogar da sua conta no site  | ALTO |
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-
 |RNF-001| Segurança: Garantir a segurança dos dados dos usuários, implementando medidas de proteção, como criptografia de dados e políticas de privacidade robustas. | ALTO | 
-
 |RNF-002| Desempenho: Assegurar que o site seja rápido e responsivo, com tempos de carregamento rápidos e uma experiência de usuário fluida. |  ALTO |  
-
 |RNF-003| Disponibilidade: Manter o site disponível e acessível 24 horas por dia, 7 dias por semana, minimizando o tempo de inatividade e realizando manutenções programadas durante períodos de baixo tráfego. |  MÉDIO | 
-
 |RNF-004| Confiabilidade: Garantir que o site seja confiável e livre de erros, com testes rigorosos de qualidade e monitoramento constante para identificar e corrigir problemas rapidamente. |  MÉDIO | 
-
 |RNF-005| Acessibilidade: Garantir que o site seja acessível para pessoas com deficiências, seguindo as diretrizes de acessibilidade da web e oferecendo recursos como texto alternativo para imagens e teclado navegacional. |  MÉDIO | 
 
 
@@ -182,16 +165,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
-|--|-------------------------------------------------------|
-                                                        
+|--|-------------------------------------------------------|                                                 
 |01| Restrições : O projeto deverá ser entregue até o final do semestre.
-
 |02| Restrições : Não pode ser desenvolvido um módulo de backend com banco de dados real.
-
 |03| Restrições : Os usuários doadores não podem editar perfis de banco e o contrário é verdadeiro.
-
 |04| Restrições : Os usuários não podem  acessar as funcionalidaders do site sem estarem logados.
-
 |05| Restrições : Os usuários doadores não podem visualizar informações de contato se nao atenderem os requisitos.
 
 
@@ -265,11 +243,12 @@ Visão geral da interação do usuário pelas telas do sistema.
 
 ......  COLOQUE AQUI O SEU TEXTO - SIGA O EXEMPLO DA TABELA ABAIXO  ......
 
+
 | Ambiente  | Plataforma              |Link de Acesso |
 |-----------|-------------------------|---------------|
-|Processo de Design Thinkgin  | Miro |  https://miro.com/XXXXXXX | 
-|Repositório de código | GitHub | https://github.com/XXXXXXX | 
-|Hospedagem do site | Heroku |  https://XXXXXXX.herokuapp.com | 
+|Processo de Design Thinkgin  | Miro | https://miro.com/app/board/uXjVNjOsZMY=/ | 
+|Repositório de código | GitHub | https://github.com/ICEI-PUC-Minas-PCO-SI/pco-si-2024-1-tiaw-blood-on| 
+|Hospedagem do site | Vercel | https://pco-si-2024-1-tiaw-blood-on.vercel.app| 
 |Protótipo Interativo | MavelApp ou Figma | https://figma.com/XXXXXXX | 
 
 >
