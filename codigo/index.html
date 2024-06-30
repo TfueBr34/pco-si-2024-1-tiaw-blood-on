@@ -30,7 +30,7 @@
                     </button>
                     <ul class="dropdown-menu dropdown-menu-dark">
                         <li><a class="dropdown-item" href="pages/mural.html">Mural</a></li>
-                        <li><a class="dropdown-item" href="pages/construcao.html">Buscar Centros</a></li>
+                        <li><a class="dropdown-item" href="pages/buscarCentroColeta.html">Buscar Centros</a></li>
                         <li><a class="dropdown-item" href="pages/info.html">Informe-se</a></li>
                         <li><a class="dropdown-item" href="pages/construcao.html">Sair da Conta</a></li>
                     </ul>
@@ -38,9 +38,9 @@
                 <a href="pages/construcao.html"><i class="fa-solid fa-user"></i></a>
             </div>
             <div id="menu_deslogado" class="col-md-5 text-center gx-5">
-                <a href="pages/construcao.html" class="btn mx-1 log_item" role="button">Login</a>
+                <a href="pages/telaLogin.html" class="btn mx-1 log_item" role="button">Login</a>
                 <a href="pages/cadastro_doador.html" class="btn mx-1 log_item" role="button">Cadastrar Usuário <br> (Doador)</a>
-                <a href="pages/construcao.html" class="btn mx-1 log_item" role="button">Cadastrar Usuário <br> (Centro)</a>
+                <a href="pages/cadastroCentro.html" class="btn mx-1 log_item" role="button">Cadastrar Usuário <br> (Centro)</a>
             </div>
         </div>
     </header>
@@ -55,9 +55,9 @@
         }else{
             document.getElementById("menu_logado").classList.remove("d-none");
             document.getElementById("menu_deslogado").classList.add("d-none");
-            document.getElementById("name").classList.remove("text-end");
+            document.getElementById("name").classList.remove("text-md-end");
             document.getElementById("name").classList.add("col-md-8");
-            document.getElementById("name").classList.add("text-center");
+            document.getElementById("name").classList.add("text-md-center");
         }
     </script>
     <!--Porção central do site com uma apresentação do site e o menu de estoque de sangue-->
@@ -124,7 +124,7 @@
     </main>
 
     <!--Footer com as informações de copyright e contato do site-->
-    <footer class="container-fluid fixed-bottom">
+    <footer class="container-fluid sticky-bottom">
         <div class="row">
             <p class="mt-4">
                 © 2024 - 2024 www.blood-on.com - All Rights Reserved.

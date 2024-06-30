@@ -3,21 +3,6 @@ const url_topico = "http://localhost:3000/topicos";
 const url_usuario = "http://localhost:3000/usuarios";
 const url_page = window.location.href;
 
-//Função que salva o usuário atual no storage da sessão
-function set_user(usuario){
-    sessionStorage.setItem("usuario",JSON.stringify(usuario));
-}
-
-//Função que verifica se o usuário já está salvo na sessão e, se não estiver, determinar o usuário que será salvo
-async function verify_user(){
-    let usuario = sessionStorage.getItem("usuario");
-    
-    if(usuario == null){
-        usuario = await get_info(url_usuario+`?id=${1}`);
-        set_user(usuario);
-    }
-}
-
 //Função de coleta de informações do JSON Server dado o id do elemento
 async function get_info(url) {
     const res = await fetch(url);
@@ -36,7 +21,7 @@ function construir_topicos(){
             let user = await get_info(url_usuario+`?id=${id_user}`);
             let current_user = JSON.parse(sessionStorage.getItem("usuario"));
             //Verifica se o usuário da sessão é o usuário do tópico alterando o HTML inserido se for
-            if(current_user[0].id == user[0].id){
+            if(current_user.id == user[0].id){
                 html_topicos += `
                 <div id="${topicos[i].id}" class="topico container">
                     <div class="row">
@@ -186,7 +171,7 @@ async function construir_comentarios(){
     let div_topico = document.getElementById("topico");
     let html_topico = "";
     //Essa porção adiciona o tópico no começo da página, da mesma forma que a função construir_tópicos
-    if(current_user[0].id == user[0].id){
+    if(current_user.id == user[0].id){
         html_topico = `
         <div class="row">
             <div class="col-1 text-end">
@@ -245,7 +230,7 @@ async function construir_comentarios(){
         let user = await get_info(url_usuario+`?id=${topico[0].comentarios[i].user}`);
         let html_comentarios = "";
         //Verifica se o usuário da sessão é o usuário do comentário alterando o HTML inserido se for
-        if(current_user[0].id == user[0].id){
+        if(current_user.id == user[0].id){
             html_comentarios = `
             <div class="topico container">
                 <div class="row">
@@ -356,8 +341,6 @@ function copy_link(){
     navigator.clipboard.writeText(url_page);
     alert("Link de compartilhamento copiado para a área de tranferência!");
 }
-
-verify_user();
 
 //Verifica se a página atual é a mural ou comentários
 if(url_page.includes("comentario")){

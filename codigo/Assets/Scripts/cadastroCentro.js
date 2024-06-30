@@ -1,34 +1,52 @@
-document.getElementById('registrationForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio do formulário
+const url_centros= "http://localhost:3000/pontosDoacao";
 
-    // Coleta os dados do formulário
-    const userData = {
-        razaoSocial: document.getElementById('razaoSocial').value,
-        email: document.getElementById('email').value,
-        senha: document.getElementById('senha').value,
-        repetirSenha: document.getElementById('repetirSenha').value,
-        logradouro: document.getElementById('logradouro').value,
-        bairro: document.getElementById('bairro').value,
-        cidade: document.getElementById('cidade').value,
-        telefone: document.getElementById('telefone').value
-    };
+//Função de coleta de informações do JSON Server dado o id do elemento
+async function get_info(url) {
+    const res = await fetch(url);
+  
+    return res.json();
+}
 
-    // Verifica se as senhas coincidem
-    if (userData.senha !== userData.repetirSenha) {
-        alert('As senhas não coincidem!');
-        return;
+async function salva_centro(){
+    if(document.getElementById("registrationForm").checkValidity()){
+        let centros = await get_info(url_centros);
+        let last_id = 0;
+        let has_mail;
+        if(centros != null){
+            centros.forEach(centro=> {
+                if(document.getElementById('email').value.toLowerCase() == centro.email){
+                    has_mail = true;
+                }
+                last_id = parseInt(centro.id);
+            });
+        }
+        if(has_mail){
+            alert("Email já está cadastrado no site");
+        }else{
+            if(document.getElementById('senha').value != document.getElementById('repetirSenha').value){
+                alert("Senhas digitadas devem ser iguais");
+            }else{
+                last_id++;
+                console.log("A");
+                let userData =  JSON.stringify({
+                    id: last_id.toString(),
+                    razaoSocial: document.getElementById('razaoSocial').value,
+                    email: document.getElementById('email').value.toLowerCase(),
+                    senha: document.getElementById('senha').value,
+                    logradouro: document.getElementById('logradouro').value.toLowerCase(),
+                    bairro: document.getElementById('bairro').value.toLowerCase(),
+                    cidade: document.getElementById('cidade').value.toLowerCase(),
+                    telefone: document.getElementById('telefone').value,
+                    image: ""
+                });
+                fetch(url_centros,{
+                    method: "POST",
+                    headers:{
+                        "Content-type": "aplication/json"
+                    },
+                    body: userData
+                }).then(res => res.json()).then(() => location.assign("../index.html"));
+            }
+        }
     }
-
-    // Verifica se já existe um usuário com a mesma razão social
-    const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
-    if (existingUsers.some(user => user.razaoSocial === userData.razaoSocial)) {
-        alert('Usuário já existe!');
-        return;
-    }
-
-    // Adiciona o novo usuário ao local storage
-    existingUsers.push(userData);
-    localStorage.setItem('users', JSON.stringify(existingUsers));
-
-    alert('Cadastro realizado com sucesso!');
-});
+}
