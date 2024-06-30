@@ -8,15 +8,26 @@ body {
 }
 
 header {
-    width: 100%;
-    background-color: #800000;
+    background-color: rgb(149, 0, 0);
     color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    justify-content: space-between; 
-    position: relative;
+    padding: 5px;
+}
+
+header  i {
+    margin-right: 5px;
+}
+
+header a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+header button i{
+    color: white;
+}
+
+.dropdown{
+    display: inline;
 }
 
 .cabecalho {
@@ -41,7 +52,7 @@ header {
 main {
     width: 100%;
     max-width: 900px;
-    background: #800000;
+    background: rgb(149, 0, 0);
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -96,94 +107,9 @@ main {
     text-align: left;
 }
 
-/* Estilos para a seção de avaliação */
-.sec_tab2 h2 {
-    font-size: 1.5em;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.avaliacao p {
-    text-align: center;
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.deixe-sua-avaliacao {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.deixe-sua-avaliacao label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.deixe-sua-avaliacao .rating {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.deixe-sua-avaliacao .rating .star {
-    font-size: 2em;
-    cursor: pointer;
-    color: #ddd;
-}
-
-.deixe-sua-avaliacao .rating .star:hover,
-.deixe-sua-avaliacao .rating .star.selected {
-    color: gold;
-}
-
-.deixe-sua-avaliacao textarea {
-    width: 80%;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-}
-
-.deixe-sua-avaliacao button {
-    padding: 10px 20px;
-    background-color: #800000;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.deixe-sua-avaliacao button:hover {
-    background-color: #600000;
-}
-
-.comentarios {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 10px;
-}
-
-.comentario {
-    background-color: #eaeaea;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-}
-
-.comentario p {
-    margin: 0 0 10px;
-}
-
-.comentario strong {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
 footer {
     width: 100%;
-    background-color: #800000;
+    background-color: rgb(149, 0, 0);;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -199,7 +125,7 @@ footer {
 }
 
 .editar-botao {
-    background-color: #800000; /* Cor de fundo verde */
+    background-color: rgb(149, 0, 0); /* Cor de fundo verde */
     color: white; /* Cor do texto branca */
     padding: 10px 20px; /* Espaçamento interno */
     margin-top: 10px; /* Espaçamento superior */
