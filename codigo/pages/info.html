@@ -45,7 +45,7 @@
                 <script type="text/javascript">
                     document.getElementsByClassName("fa-user")[0].addEventListener("click", function() {
                         let current_user = JSON.parse(sessionStorage.getItem("usuario"));
-                        location.assign("pages/"+current_user.url_perfil);
+                        location.assign(current_user.url_perfil);
                     });
                 </script>
                 <a href="../index.html"><i class="fa-solid fa-house"></i></a>
