@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () { //Define a data atua
     document.getElementById('data_1').textContent = formatDate(currentDate);
 
 
-    fetch('/codigo/assets/base_dados_doadores.json') // Carrega dados dos doadores a partir de arquivo json
+    fetch('../Assets/base_dados_doadores.json') // Carrega dados dos doadores a partir de arquivo json
         .then(response => response.json())
         .then(base_dados_doadores => {
             window.base_dados_doadores = base_dados_doadores; //Grava os dados dos doadores em uma variável global
