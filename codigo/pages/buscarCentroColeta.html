@@ -26,24 +26,30 @@
                 </button>    
                 <ul class="dropdown-menu dropdown-menu-dark">
                     <li><a class="dropdown-item" href="mural.html">Mural</a></li>
-                    <li><a class="dropdown-item" href="buscarCentroColeta.html">Buscar Centros</a></li>
                     <li><a class="dropdown-item" href="info.html">Informe-se</a></li>
-                    <li><a class="dropdown-item" href="construcao.html">Sair da Conta</a></li>
+                    <li><a class="dropdown-item" href="agenda_busca.html">Agenda</a></li>
+                    <li><a class="dropdown-item" onclick="desloga()">Sair da Conta</a></li>
+                    <script type="text/javascript">
+                        function desloga(){
+                            sessionStorage.removeItem("usuario");
+                            location.assign("../index.html");
+                        }
+                    </script>
                 </ul>
             </div>   
-            <a href="construcao.html"><i class="fa-solid fa-user"></i></a>
+            <i class="fa-solid fa-user"></i>
+                <script type="text/javascript">
+                    document.getElementsByClassName("fa-user")[0].addEventListener("click", function() {
+                        let current_user = JSON.parse(sessionStorage.getItem("usuario"));
+                        location.assign("pages/"+current_user.url_perfil);
+                    });
+                </script>
             <a href="../index.html"><i class="fa-solid fa-house"></i></a>
         </div>       
     </div> 
     </header>
 
     <div class="container"> <!-- Container principal da página -->
-        <aside class="sidebar"> <!-- Barra lateral -->
-            <h2>Estoque de Sangue</h2> <!-- Título da barra lateral -->
-            <ul class="blood-status">
-                <!-- Lista para exibir o status do estoque de sangue -->
-            </ul>
-        </aside>
 
         <div class="main-content"> <!-- Conteúdo principal da página -->
             <div class="search-wrapper">

@@ -1,3 +1,30 @@
+//Função de coleta de informações do JSON Server dado o id do elemento
+async function get_info(url) {
+    const res = await fetch(url);
+  
+    return res.json();
+}
+
+async function carrega_dados(){
+    let html_empresa = "";
+    let usuario = JSON.parse(sessionStorage.getItem("usuario"));
+    html_empresa = `<div class="empresa-foto">
+            <img src="${usuario.image}" alt="Foto da Empresa">
+        </div>
+        <div class="empresa-nome">
+            ${usuario.razaoSocial}
+        </div>
+        <div class="empresa-info">
+            <br>
+            <h3>Informações de Contato</h3>
+            <p>Telefone</p> ${usuario.telefone}
+            <p>Email</p> ${usuario.email}
+        </div>`;
+    let secao_empresa = document.querySelector(".sec_tab1");
+    secao_empresa.innerHTML = html_empresa;
+}
+
+carrega_dados();
 document.getElementById("editar-info").addEventListener("click", function() {
     // Alternar para o modo de edição
     document.getElementById("nome").style.display = "none";

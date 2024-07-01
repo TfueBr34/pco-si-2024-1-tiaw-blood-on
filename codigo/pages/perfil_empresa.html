@@ -26,12 +26,25 @@
                 </button>    
                 <ul class="dropdown-menu dropdown-menu-dark">
                     <li><a class="dropdown-item" href="mural.html">Mural</a></li>
-                    <li><a class="dropdown-item" href="construcao.html">Buscar Centros</a></li>
+                    <li><a class="dropdown-item" href="buscarCentroColeta.html">Buscar Centros</a></li>
                     <li><a class="dropdown-item" href="info.html">Informe-se</a></li>
-                    <li><a class="dropdown-item" href="construcao.html">Sair da Conta</a></li>
+                    <li><a class="dropdown-item" href="agenda_busca.html">Agenda</a></li>
+                    <li><a class="dropdown-item" onclick="desloga()">Sair da Conta</a></li>
+                    <script type="text/javascript">
+                        function desloga(){
+                            sessionStorage.removeItem("usuario");
+                            location.assign("../index.html");
+                        }
+                    </script>
                 </ul>
             </div>   
-            <a href="construcao.html"><i class="fa-solid fa-user"></i></a>
+            <i class="fa-solid fa-user"></i>
+            <script type="text/javascript">
+                document.getElementsByClassName("fa-user")[0].addEventListener("click", function() {
+                    let current_user = JSON.parse(sessionStorage.getItem("usuario"));
+                    location.assign("pages/"+current_user.url_perfil);
+                });
+            </script>
             <a href="../index.html"><i class="fa-solid fa-house"></i></a>
         </div>       
     </div> 
@@ -39,22 +52,6 @@
     <main>
         <div class="container">
             <section class="sec_tab1">
-                <div class="empresa-foto">
-                    <img src="/codigo/assets/images/foto_empresa.jpg" alt="Foto da Empresa" id="foto-empresa"> <!-- Foto da empresa -->
-                    <input type="file" id="foto-input" style="display:none;"> <!-- Campo de edição da foto -->
-                </div>
-                <div class="empresa-nome">
-                    EMPRESA TESTE <!-- Nome da empresa -->
-                </div>
-                <div class="empresa-info">
-                    <p></p>
-                    <p></p>
-                    Informações de Contato
-                    <p id="nome">Nome</p> <!-- Informação da empresa 1 -->
-                    <input type="text" id="nome-input" value="Nome" style="display:none;"> <!-- Campo de edição do nome -->
-                    <p id="telefone">Telefone</p> <!-- Informação da empresa 2 -->
-                    <input type="text" id="telefone-input" value="Telefone" style="display:none;"> <!-- Campo de edição do telefone -->
-                    <p id="email">Email</p> <!-- Informação da empresa 3 -->
                     <input type="text" id="email-input" value="Email" style="display:none;"> <!-- Campo de edição do email -->
                     <div class="botao-container">
                         <button id="editar-info" class="editar-botao">Editar</button> <!-- Botão para editar -->
@@ -74,6 +71,6 @@
         </div>
     </footer>
     <script src="/codigo/assets/Scripts/scripts_feed_back_centro_coleta.js"></script> <!--Carrega arquivo javascript da página-->
-    <script src="/codigo/assets/Scripts/editar_empresa.js"></script> <!--Carrega o arquivo JavaScript de edição-->
+    <script src="/codigo/assets/Scripts/empresa.js"></script> <!--Carrega o arquivo JavaScript de edição-->
 </body>
 </html>

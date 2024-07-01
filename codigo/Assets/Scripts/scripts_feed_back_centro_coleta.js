@@ -1,4 +1,40 @@
+//Declaração da rota do JSON Server
+const url_centros= "http://localhost:3000/pontosDoacao";
+const url_page = window.location.href;
+
+//Função de coleta de informações do JSON Server dado o id do elemento
+async function get_info(url) {
+    const res = await fetch(url);
+  
+    return res.json();
+}
+
+async function carrega_dados(){
+    let empresas = await get_info(url_centros);
+    let html_empresa = "";
+
+    empresas.forEach(empresa => {
+        if(empresa.id == url_page.split("=")[1]){
+            html_empresa = `<div class="empresa-foto">
+                    <img src="${empresa.image}" alt="Foto da Empresa">
+                </div>
+                <div class="empresa-nome">
+                    ${empresa.razaoSocial}
+                </div>
+                <div class="empresa-info">
+                    <br>
+                    <h3>Informações de Contato</h3>
+                    <p>Telefone</p> ${empresa.telefone}
+                    <p>Email</p> ${empresa.email}
+                </div>`;
+        }
+    });
+    let secao_empresa = document.querySelector(".sec_tab1");
+    secao_empresa.innerHTML = html_empresa;
+}
+
 document.addEventListener("DOMContentLoaded", function() {
+    carrega_dados();
     let selectedRating = 0;
 
     // Adiciona eventos aos elementos de estrela

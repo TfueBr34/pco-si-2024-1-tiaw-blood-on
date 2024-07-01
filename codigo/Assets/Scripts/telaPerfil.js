@@ -1,7 +1,43 @@
-const url_topico = "http://localhost:3000/topicos";
 const url_usuario = "http://localhost:3000/usuarios";
 const url_page = window.location.href;
 
+async function carregaDados(){
+    let usuario = JSON.parse(sessionStorage.getItem("usuario"));
+    let sexo;
+    if(usuario.sexo == "1"){
+        sexo = "Masculino";
+    }else{
+        sexo = "Feminino";
+    }
+    let html_user = `<div class="user-name">
+                    <h2 id="user-name">
+                        <span id="fullNameText">${usuario.username}</span>
+                        <input type="text" id="fullName" class="editable" value="">
+                        <button class="edit-button" onclick="enableEditing()">✏️</button>
+                    </h2>
+                </div>
+                <div class="user-details">
+                    <h3>INFORMAÇÕES PESSOAIS</h3>
+                    <p>
+                        Data de Nascimento: <span id="birthDateText">${usuario.dt_nasc}</span><input type="date" id="birthDate" class="editable" value=""><br>
+                        Celular: <span id="cellText">${usuario.telefone}</span><input type="text" id="cell" class="editable" value=""><br>
+                        E-mail: <span id="emailText">${usuario.email}</span><input type="text" id="email" class="editable" value=""><br>
+                    </p>
+                </div>
+                <div class="other-info">
+                    <h3>OUTRAS INFORMAÇÕES</h3>
+                    <p>
+                        Bairro: <span id="districtText">${usuario.bairro}</span><input type="text" id="district" class="editable" value=""><br>
+                        Cidade: <span id="cityText">${usuario.cidade}</span><input type="text" id="city" class="editable" value=""><br>
+                        Sexo: <span id="sexoText">${sexo}</span><input type="text" id="sexo" class="editable" value=""><br>
+                    </p>
+                </div>
+                <button id="save-button" class="save-button">Salvar</button>`;
+    let secao_usuario = document.querySelector(".user-info");
+    secao_usuario.innerHTML = html_user;
+}
+
+carregaDados()
 document.addEventListener("DOMContentLoaded", () => {
     const saveButton = document.getElementById("save-button");
     const saveRequirementsButton = document.getElementById("save-requirements-button");
@@ -19,21 +55,21 @@ document.addEventListener("DOMContentLoaded", () => {
             cep: document.getElementById("cep").value
         };
 
-        updateUserInformation(userInfo);
+        updateUser(userInfo);
         disableEditing();
     });
 
     saveRequirementsButton.addEventListener("click", () => {
         const requirementsInfo = {
-            weight: document.querySelector('input[name="weight"]:checked')?.value,
-            age: document.querySelector('input[name="age"]:checked')?.value,
-            endemic: document.querySelector('input[name="endemic"]:checked')?.value,
-            ists: document.querySelector('input[name="ists"]:checked')?.value,
-            hepatiteHIV: document.querySelector('input[name="hepatiteHIV"]:checked')?.value,
-            infection: document.querySelector('input[name="infection"]:checked')?.value
+            peso: document.querySelector('input[name="weight"]:checked')?.value,
+            idade: document.querySelector('input[name="age"]:checked')?.value,
+            viagem: document.querySelector('input[name="endemic"]:checked')?.value,
+            ist: document.querySelector('input[name="ists"]:checked')?.value,
+            hep_hiv: document.querySelector('input[name="hepatiteHIV"]:checked')?.value,
+            doenca: document.querySelector('input[name="infection"]:checked')?.value
         };
 
-        updateRequirementsInformation(requirementsInfo);
+        updateRequirements(requirementsInfo);
         disableEditingRequirements();
     });
 });
@@ -77,42 +113,4 @@ function disableEditingRequirements() {
         span.style.display = 'inline';
     });
 }
-async function get_info(url) {
-    const res = await fetch(url);
-  
-    return res.json();
-}
 
-function updateUserInformation(data) {
-    fetch("http://localhost:3000/users", {
-        method: "PATCH",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-    })
-    .then(response => response.json())
-    .then(updatedData => {
-        console.log("Informações atualizadas com sucesso:", updatedData);
-    })
-    .catch(error => {
-        console.error("Erro ao atualizar informações:", error);
-    });
-}
-
-function updateRequirementsInformation(data) {
-    fetch("http://localhost:3000/requirements", {
-        method: "PATCH",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-    })
-    .then(response => response.json())
-    .then(updatedData => {
-        console.log("Requisitos atualizados com sucesso:", updatedData);
-    })
-    .catch(error => {
-        console.error("Erro ao atualizar requisitos:", error);
-    });
-}

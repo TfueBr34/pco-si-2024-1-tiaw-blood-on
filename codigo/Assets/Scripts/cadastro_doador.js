@@ -45,7 +45,8 @@ async function salva_doador(){
                         "ist": false,
                         "hep/hiv": false,
                         "doenca": false
-                    }
+                    },
+                    url_perfil: "telaperfil.html?id="+last_id.toString()
                 });
                 fetch(url_usuario,{
                     method: "POST",

@@ -52,9 +52,10 @@
         "idade": true,
         "viagem": true,
         "ist": false,
-        "hep/hiv": true,
+        "hep_hiv": true,
         "doenca": true
-      }
+      },
+      "url_perfil": "telaperfil.html?id=1"
     },
     {
       "id": "2",
@@ -72,9 +73,10 @@
         "idade": true,
         "viagem": false,
         "ist": true,
-        "hep/hiv": false,
+        "hep_hiv": false,
         "doenca": true
-      }
+      },
+      "url_perfil": "telaperfil.html?id=2"
     },
     {
       "id": "3",
@@ -86,15 +88,16 @@
       "dt_nasc": "2003-08-19",
       "telefone": "31983312890",
       "sexo": "1",
-      "url_pic": "",
+      "url_pic": "foto_perfil.png",
       "requisitos": {
         "peso": true,
         "idade": true,
         "viagem": true,
         "ist": true,
-        "hep/hiv": true,
+        "hep_hiv": true,
         "doenca": true
-      }
+      },
+      "url_perfil": "telaperfil.html?id=3"
     }
   ],
   "pontosDoacao": [
@@ -107,7 +110,8 @@
       "bairro": "Santa Efigênia",
       "cidade": "Belo Horizonte",
       "telefone": "(31)1234-5678",
-      "image": "../Assets/Images/beloHorizonte.png"
+      "image": "../Assets/Images/beloHorizonte.png",
+      "url_perfil": "perfil_empresa.html?id=1"
     },
     {
       "id": "2",
@@ -118,7 +122,8 @@
       "bairro": "Eldorado",
       "cidade": "Contagem",
       "telefone": "(31)9876-5432",
-      "image": "../Assets/Images/contagem.png"
+      "image": "../Assets/Images/contagem.png",
+      "url_perfil": "perfil_empresa.html?id=2"
     },
     {
       "id": "3",
@@ -129,7 +134,8 @@
       "bairro": "Centro",
       "cidade": "Betim",
       "telefone": "(31)5643-2198",
-      "image": "../Assets/Images/betim.png"
+      "image": "../Assets/Images/betim.png",
+      "url_perfil": "perfil_empresa.html?id=3"
     },
     {
       "id": "4",
@@ -140,7 +146,8 @@
       "bairro": "São Benedito",
       "cidade": "Santa Luzia",
       "telefone": "(31)4321-8765",
-      "image": "../Assets/Images/santaLuzia.png"
+      "image": "../Assets/Images/santaLuzia.png",
+      "url_perfil": "perfil_empresa.html?id=4"
     }
   ],
   "tipos_sangue": [

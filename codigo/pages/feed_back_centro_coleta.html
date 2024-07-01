@@ -28,10 +28,23 @@
                     <li><a class="dropdown-item" href="mural.html">Mural</a></li>
                     <li><a class="dropdown-item" href="buscarCentroColeta.html">Buscar Centros</a></li>
                     <li><a class="dropdown-item" href="info.html">Informe-se</a></li>
-                    <li><a class="dropdown-item" href="construcao.html">Sair da Conta</a></li>
+                    <li><a class="dropdown-item" href="agenda_busca.html">Agenda</a></li>
+                    <li><a class="dropdown-item" onclick="desloga()">Sair da Conta</a></li>
+                    <script type="text/javascript">
+                        function desloga(){
+                            sessionStorage.removeItem("usuario");
+                            location.assign("../index.html");
+                        }
+                    </script>
                 </ul>
             </div>   
-            <a href="construcao.html"><i class="fa-solid fa-user"></i></a>
+            <i class="fa-solid fa-user"></i>
+                <script type="text/javascript">
+                    document.getElementsByClassName("fa-user")[0].addEventListener("click", function() {
+                        let current_user = JSON.parse(sessionStorage.getItem("usuario"));
+                        location.assign("pages/"+current_user.url_perfil);
+                    });
+                </script>
             <a href="../index.html"><i class="fa-solid fa-house"></i></a>
         </div>       
     </div> 
@@ -39,20 +52,6 @@
     <main>
         <div class="container">
             <section class="sec_tab1">
-                <div class="empresa-foto">
-                    <img src="/codigo/assets/images/foto_empresa.jpg" alt="Foto da Empresa"> <!-- Foto da empresa -->
-                </div>
-                <div class="empresa-nome">
-                    EMPRESA TESTE <!-- Nome da empresa -->
-                </div>
-                <div class="empresa-info">
-                    <p></p>
-                    <p></p>
-                     Informações de Contato
-                    <p>Nome</p> <!-- Informação da empresa 1 -->
-                    <p>Telefone</p> <!-- Informação da empresa 2 -->
-                    <p>Email</p> <!-- Informação da empresa 3 -->
-                </div>
             </section>        
             <section class="sec_tab2">
                 <h2>AVALIAÇÃO:</h2>

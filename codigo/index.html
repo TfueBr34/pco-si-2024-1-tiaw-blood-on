@@ -32,10 +32,23 @@
                         <li><a class="dropdown-item" href="pages/mural.html">Mural</a></li>
                         <li><a class="dropdown-item" href="pages/buscarCentroColeta.html">Buscar Centros</a></li>
                         <li><a class="dropdown-item" href="pages/info.html">Informe-se</a></li>
-                        <li><a class="dropdown-item" href="pages/construcao.html">Sair da Conta</a></li>
+                        <li><a class="dropdown-item" href="pages/agenda_busca.html">Agenda</a></li>
+                        <li><a class="dropdown-item" onclick="desloga()">Sair da Conta</a></li>
+                        <script type="text/javascript">
+                            function desloga(){
+                                sessionStorage.removeItem("usuario");
+                                location.reload();
+                            }
+                        </script>
                     </ul>
                 </div>
-                <a href="pages/construcao.html"><i class="fa-solid fa-user"></i></a>
+                <i class="fa-solid fa-user"></i>
+                <script type="text/javascript">
+                    document.getElementsByClassName("fa-user")[0].addEventListener("click", function() {
+                        let current_user = JSON.parse(sessionStorage.getItem("usuario"));
+                        location.assign("pages/"+current_user.url_perfil);
+                    });
+                </script>
             </div>
             <div id="menu_deslogado" class="col-md-5 text-center gx-5">
                 <a href="pages/telaLogin.html" class="btn mx-1 log_item" role="button">Login</a>
