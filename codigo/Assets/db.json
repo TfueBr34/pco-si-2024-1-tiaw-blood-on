@@ -55,7 +55,7 @@
         "hep_hiv": true,
         "doenca": true
       },
-      "url_perfil": "telaperfil.html?id=1"
+      "url_perfil": "telaPerfil.html?id=1"
     },
     {
       "id": "2",
@@ -76,7 +76,7 @@
         "hep_hiv": false,
         "doenca": true
       },
-      "url_perfil": "telaperfil.html?id=2"
+      "url_perfil": "telaPerfil.html?id=2"
     },
     {
       "id": "3",
@@ -97,7 +97,7 @@
         "hep_hiv": true,
         "doenca": true
       },
-      "url_perfil": "telaperfil.html?id=3"
+      "url_perfil": "telaPerfil.html?id=3"
     }
   ],
   "pontosDoacao": [
