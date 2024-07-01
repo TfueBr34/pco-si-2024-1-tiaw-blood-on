@@ -113,7 +113,7 @@ function add_topico(texto){
     let usuario = JSON.parse(sessionStorage.getItem("usuario"));
     const new_topico = JSON.stringify({
         id: last_id_topico.toString(),
-        user: usuario[0].id,
+        user: usuario.id,
         texto: texto,
         num_curtida: 0,
         comentarios: []

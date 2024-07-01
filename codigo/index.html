@@ -32,7 +32,14 @@
                         <li><a class="dropdown-item" href="pages/mural.html">Mural</a></li>
                         <li><a class="dropdown-item" href="pages/buscarCentroColeta.html">Buscar Centros</a></li>
                         <li><a class="dropdown-item" href="pages/info.html">Informe-se</a></li>
-                        <li><a class="dropdown-item" href="pages/construcao.html">Sair da Conta</a></li>
+                        <li><a class="dropdown-item" href="pages/agenda_busca.html">Agenda</a></li>
+                        <li><a class="dropdown-item" onclick="desloga()">Sair da Conta</a></li>
+                        <script type="text/javascript">
+                            function desloga(){
+                                sessionStorage.removeItem("usuario");
+                                location.reload();
+                            }
+                        </script>
                     </ul>
                 </div>
                 <i class="fa-solid fa-user"></i>

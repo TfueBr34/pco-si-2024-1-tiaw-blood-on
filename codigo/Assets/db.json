@@ -52,7 +52,7 @@
         "idade": true,
         "viagem": true,
         "ist": false,
-        "hep/hiv": true,
+        "hep_hiv": true,
         "doenca": true
       },
       "url_perfil": "telaperfil.html?id=1"
@@ -73,7 +73,7 @@
         "idade": true,
         "viagem": false,
         "ist": true,
-        "hep/hiv": false,
+        "hep_hiv": false,
         "doenca": true
       },
       "url_perfil": "telaperfil.html?id=2"
@@ -88,13 +88,13 @@
       "dt_nasc": "2003-08-19",
       "telefone": "31983312890",
       "sexo": "1",
-      "url_pic": "",
+      "url_pic": "foto_perfil.png",
       "requisitos": {
         "peso": true,
         "idade": true,
         "viagem": true,
         "ist": true,
-        "hep/hiv": true,
+        "hep_hiv": true,
         "doenca": true
       },
       "url_perfil": "telaperfil.html?id=3"
