@@ -1,4 +1,4 @@
-const url_usuario = "http://localhost:3000/usuarios";
+const url_usuario = "http://api-storage-tiaw-navy.vercel.app/usuarios";
 const url_page = window.location.href;
 
 async function carregaDados(){

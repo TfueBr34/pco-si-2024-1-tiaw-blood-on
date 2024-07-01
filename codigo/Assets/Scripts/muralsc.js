@@ -1,6 +1,6 @@
 //Declaração das rotas do JSON Server e da url atual da página
-const url_topico = "http://localhost:3000/topicos";
-const url_usuario = "http://localhost:3000/usuarios";
+const url_topico = "http://api-storage-tiaw-navy.vercel.app/topicos";
+const url_usuario = "http://api-storage-tiaw-navy.vercel.app/usuarios";
 const url_page = window.location.href;
 
 //Função de coleta de informações do JSON Server dado o id do elemento

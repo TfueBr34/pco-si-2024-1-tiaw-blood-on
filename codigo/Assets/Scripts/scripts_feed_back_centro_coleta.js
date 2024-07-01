@@ -1,5 +1,5 @@
 //Declaração da rota do JSON Server
-const url_centros= "http://localhost:3000/pontosDoacao";
+const url_centros= "http://api-storage-tiaw-navy.vercel.app/pontosDoacao";
 const url_page = window.location.href;
 
 //Função de coleta de informações do JSON Server dado o id do elemento

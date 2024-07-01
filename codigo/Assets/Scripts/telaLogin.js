@@ -1,5 +1,5 @@
-const url_usuario = "http://localhost:3000/usuarios";
-const url_centros= "http://localhost:3000/pontosDoacao";
+const url_usuario = "http://api-storage-tiaw-navy.vercel.app/usuarios";
+const url_centros= "http://api-storage-tiaw-navy.vercel.app/pontosDoacao";
 
 //Função de coleta de informações do JSON Server dado o id do elemento
 async function get_info(url) {

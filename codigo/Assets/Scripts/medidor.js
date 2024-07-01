@@ -1,5 +1,5 @@
 //Declaração da rota do JSON Server
-const url_sangue = "http://localhost:3000/tipos_sangue";
+const url_sangue = "http://api-storage-tiaw-navy.vercel.app/tipos_sangue";
 
 //Função de coleta de informações do JSON Server dado o id do elemento
 async function get_info(url) {
