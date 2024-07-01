@@ -37,7 +37,8 @@ async function salva_centro(){
                     bairro: document.getElementById('bairro').value.toLowerCase(),
                     cidade: document.getElementById('cidade').value.toLowerCase(),
                     telefone: document.getElementById('telefone').value,
-                    image: ""
+                    image: "",
+                    url_perfil: "perfil_empresa.html?id"+last_id.toString()
                 });
                 fetch(url_centros,{
                     method: "POST",

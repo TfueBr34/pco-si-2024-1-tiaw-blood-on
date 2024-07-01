@@ -34,7 +34,7 @@ function searchHemocenters() {
                     img.alt = hc.razaoSocial;
 
                     let link = document.createElement('a');
-                    link.href = `perfil_empresa.html?id=${hc.id}`;
+                    link.href = `feed_back_centro_coleta.html?id=${hc.id}`;
                     let h2 = document.createElement('h2');
                     h2.textContent = hc.razaoSocial;
                     link.append(h2);
