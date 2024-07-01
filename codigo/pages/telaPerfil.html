@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Usuário</title>
+    <link rel="stylesheet" href="/pco-si-2024-1-tiaw-blood-on/codigo/Assets/CSS/styles_telaPerfil.css">
+    <script defer src="/pco-si-2024-1-tiaw-blood-on/codigo/Assets/Scripts/telaPerfil.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <img src="/pco-si-2024-1-tiaw-blood-on/codigo/Assets/Images/logo.png" alt="Logo" class="logo">
+            <div class="user-info">
+                <div class="user-name">
+                    <h2 id="user-name">
+                        <span id="fullNameText">NOME DO USUÁRIO</span>
+                        <input type="text" id="fullName" class="editable" value="">
+                        <button class="edit-button" onclick="enableEditing()">✏️</button>
+                    </h2>
+                </div>
+                <div class="user-details">
+                    <h3>INFORMAÇÕES PESSOAIS</h3>
+                    <p>
+                        Data de Nascimento: <span id="birthDateText"></span><input type="date" id="birthDate" class="editable" value=""><br>
+                        Tipo Sanguíneo: <span id="bloodTypeText"></span><input type="text" id="bloodType" class="editable" value=""><br>
+                        Celular: <span id="cellText"></span><input type="text" id="cell" class="editable" value=""><br>
+                        E-mail: <span id="emailText"></span><input type="text" id="email" class="editable" value=""><br>
+                    </p>
+                </div>
+                <div class="other-info">
+                    <h3>OUTRAS INFORMAÇÕES</h3>
+                    <p>
+                        Endereço: <span id="addressText"></span><input type="text" id="address" class="editable" value=""><br>
+                        Bairro: <span id="districtText"></span><input type="text" id="district" class="editable" value=""><br>
+                        Cidade: <span id="cityText"></span><input type="text" id="city" class="editable" value=""><br>
+                        CEP: <span id="cepText"></span><input type="text" id="cep" class="editable" value=""><br>
+                    </p>
+                </div>
+                <button id="save-button" class="save-button">Salvar</button>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="requirements">
+                <h3>REQUISITOS</h3>
+                <button class="edit-button" onclick="enableEditingRequirements()">✏️</button>
+                <p>
+                    <div id="sim-nao" class="sim-nao">Sim_____Não</div><p></p>
+
+                    Possui no mínimo 50 kg: 
+                    <span id="weightText">Não informado</span>
+                    <input type="radio" name="weight" class="editable-requirements" value="yes"> 
+                    <input type="radio" name="weight" class="editable-requirements" value="no"> 
+                </p>
+                <p>
+                    Tem entre 18 e 69 anos: 
+                    <span id="ageText">Não informado</span>
+                    <input type="radio" name="age" class="editable-requirements" value="yes">  
+                    <input type="radio" name="age" class="editable-requirements" value="no"> 
+                </p>
+                <p>
+                    Viajou para região endêmica: 
+                    <span id="endemicText">Não informado</span>
+                    <input type="radio" name="endemic" class="editable-requirements" value="yes">  
+                    <input type="radio" name="endemic" class="editable-requirements" value="no"> 
+                </p>
+                <p>
+                    Possui ISTs: 
+                    <span id="istsText">Não informado</span>
+                    <input type="radio" name="ists" class="editable-requirements" value="yes"> 
+                    <input type="radio" name="ists" class="editable-requirements" value="no"> 
+                </p>
+                <p>
+                    Possui Hepatite ou HIV: 
+                    <span id="hepatiteHIVText">Não informado</span>
+                    <input type="radio" name="hepatiteHIV" class="editable-requirements" value="yes">  
+                    <input type="radio" name="hepatiteHIV" class="editable-requirements" value="no"> 
+                </p>
+                <p>
+                    Possui sintomas de doença infecciosa: 
+                    <span id="infectionText">Não informado</span>
+                    <input type="radio" name="infection" class="editable-requirements" value="yes"> 
+                    <input type="radio" name="infection" class="editable-requirements" value="no"> 
+                </p>
+                <button id="save-requirements-button" class="save-button">Salvar</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
