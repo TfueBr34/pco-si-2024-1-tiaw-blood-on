@@ -21,15 +21,15 @@ function construir_topicos(){
             let user = await get_info(url_usuario+`?id=${id_user}`);
             let current_user = JSON.parse(sessionStorage.getItem("usuario"));
             //Verifica se o usuário da sessão é o usuário do tópico alterando o HTML inserido se for
-            if(current_user.id == user[0].id){
+            if(current_user.id == user.id){
                 html_topicos += `
                 <div id="${topicos[i].id}" class="topico container">
                     <div class="row">
                         <div class="col-1 text-end">
-                            <img src="../Assets/Images/${user[0].url_pic}" alt="foto de perfil">
+                            <img src="../Assets/Images/${user.url_pic}" alt="foto de perfil">
                         </div>
                         <div class="col-9 mt-1 text-start">
-                            <h6>${user[0].username}</h6>
+                            <h6>${user.username}</h6>
                         </div>
                         <div class="col-2 text-end">
                             <i class="fa-solid fa-trash" onclick="deletar_topico(${topicos[i].id})"></i>
@@ -55,10 +55,10 @@ function construir_topicos(){
                 <div id="${topicos[i].id}" class="topico container">
                     <div class="row">
                         <div class="col-1 text-end">
-                            <img src="../Assets/Images/${user[0].url_pic}" alt="foto de perfil">
+                            <img src="../Assets/Images/${user.url_pic}" alt="foto de perfil">
                         </div>
                         <div class="col-11 mt-1 text-start">
-                            <h6>${user[0].username}</h6>
+                            <h6>${user.username}</h6>
                         </div>
                     </div>
                     <div class="row">
@@ -171,14 +171,14 @@ async function construir_comentarios(){
     let div_topico = document.getElementById("topico");
     let html_topico = "";
     //Essa porção adiciona o tópico no começo da página, da mesma forma que a função construir_tópicos
-    if(current_user.id == user[0].id){
+    if(current_user.id == user.id){
         html_topico = `
         <div class="row">
             <div class="col-1 text-end">
-                <img src="../Assets/Images/${user[0].url_pic}" alt="foto de perfil">
+                <img src="../Assets/Images/${user.url_pic}" alt="foto de perfil">
             </div>
             <div class="col-9 mt-1 text-start">
-                <h6>${user[0].username}</h6>
+                <h6>${user.username}</h6>
             </div>
             <div class="col-2 text-end">
                 <i class="fa-solid fa-trash" onclick="deletar_topico(${topico[0].id})"></i>
@@ -202,10 +202,10 @@ async function construir_comentarios(){
         html_topico = `
         <div class="row">
             <div class="col-1 text-end">
-                <img src="../Assets/Images/${user[0].url_pic}" alt="foto de perfil">
+                <img src="../Assets/Images/${user.url_pic}" alt="foto de perfil">
             </div>
             <div class="col-11 mt-1 text-start">
-                <h6>${user[0].username}</h6>
+                <h6>${user.username}</h6>
             </div>
         </div>
         <div class="row">
@@ -230,15 +230,15 @@ async function construir_comentarios(){
         let user = await get_info(url_usuario+`?id=${topico[0].comentarios[i].user}`);
         let html_comentarios = "";
         //Verifica se o usuário da sessão é o usuário do comentário alterando o HTML inserido se for
-        if(current_user.id == user[0].id){
+        if(current_user.id == user.id){
             html_comentarios = `
             <div class="topico container">
                 <div class="row">
                     <div class="col-1 text-end">
-                        <img src="../Assets/Images/${user[0].url_pic}" alt="foto de perfil">
+                        <img src="../Assets/Images/${user.url_pic}" alt="foto de perfil">
                     </div>
                     <div class="col-9 mt-1 text-start">
-                        <h6>${user[0].username}</h6>
+                        <h6>${user.username}</h6>
                     </div>
                     <div class="col-2 text-end">
                         <i class="fa-solid fa-trash" onclick="deletar_comentario(${topico[0].comentarios[i].id})"></i>
@@ -264,10 +264,10 @@ async function construir_comentarios(){
             <div class="topico container">
                 <div class="row">
                     <div class="col-1 text-end">
-                        <img src="../Assets/Images/${user[0].url_pic}" alt="foto de perfil">
+                        <img src="../Assets/Images/${user.url_pic}" alt="foto de perfil">
                     </div>
                     <div class="col-11 mt-1 text-start">
-                        <h6>${user[0].username}</h6>
+                        <h6>${user.username}</h6>
                     </div>
                 </div>
                 <div class="row">
