@@ -1,4 +1,4 @@
-const url_centros= "http://api-storage-tiaw-navy.vercel.app/pontosDoacao";
+const url_centros= "https://api-storage-tiaw-navy.vercel.app/pontosDoacao";
 
 function searchHemocenters() {
     const city = document.getElementById('city-input').value.trim(); 

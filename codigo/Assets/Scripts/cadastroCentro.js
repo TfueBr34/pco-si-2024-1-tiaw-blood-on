@@ -1,4 +1,4 @@
-const url_centros= "http://api-storage-tiaw-navy.vercel.app/pontosDoacao";
+const url_centros= "https://api-storage-tiaw-navy.vercel.app/pontosDoacao";
 
 //Função de coleta de informações do JSON Server dado o id do elemento
 async function get_info(url) {
