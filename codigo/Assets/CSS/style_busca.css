@@ -9,22 +9,27 @@ body {
     min-height: 100vh;
 }
 
-.header {
-    background-color: #920202;
+header {
+    background-color: rgb(149, 0, 0);
     color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 5px;
 }
 
-.header h1 {
-    margin: 0;
+header  i {
+    margin-right: 5px;
 }
 
-.header .icons {
-    display: flex;
-    gap: 10px;
+header a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+header button i{
+    color: white;
+}
+
+.dropdown{
+    display: inline;
 }
 
 .imagemLogo img {
@@ -125,14 +130,15 @@ a{
     font-size: 1.5em;
 }
 
-.footer {
-    background-color: #920202;
+footer {
+    width: 100%;
+    background-color: rgb(149, 0, 0);
     color: white;
-    padding: 10px;
     text-align: center;
+    padding: 10px 0;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    left: 0;
 }
 
 /* Responsividade */

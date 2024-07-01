@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8B0000;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.left-side, .right-side {
+    background-color: white;
+    color: black;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.user-info {
+    text-align: center;
+}
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.user-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-name h2 {
+    margin: 10px;
+}
+
+.edit-button {
+    background: none;
+    border: none;
+    color: blue;
+    cursor: pointer;
+}
+
+.save-button {
+    background-color: #cf1313;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #cc0d0d;
+}
+
+.user-details, .other-info, .account-info, .achievements, .requirements {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.editable, .editable-requirements {
+    display: none;
+}
+
+.requirements p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.requirements span {
+    display: inline-block;
+    width: 150px;
+}
+.sim-nao{
+    margin-left: 200px;
+}
